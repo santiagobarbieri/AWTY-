@@ -29,7 +29,7 @@
 
   async function load() {
     try {
-      const res = await fetch('../data/content.json');
+      const res = await fetch('./content.json');
       sections = await res.json();
       setStatus(`${sections.length} secciones cargadas`);
     } catch (err) {
@@ -306,9 +306,7 @@
   }
 
   function resolveAssetPath(path) {
-    if (!path) return '';
-    // El panel vive en /admin, las rutas del JSON son relativas a la raíz del sitio.
-    return path.replace(/^\.\//, '../');
+    return path || '';
   }
 
   // ---------- vista previa ----------
@@ -330,19 +328,17 @@
     const cssFile = templateFileMap[entry.template] || entry.template;
 
     const style = entry.template === 'cover' && entry.backgroundImage
-      ? ` style="--cover-image:url('${resolveAssetPath(entry.backgroundImage)}')"`
+      ? ` style="--cover-image:url('${entry.backgroundImage.replace(/^\./, '')}')"`
       : '';
 
-    // Reescribe rutas de imágenes relativas (./assets/..) para que
-    // funcionen desde /admin sin duplicar la lógica de cada plantilla.
-    const html = render(entry).replace(/(src|background-image:url\(')\.\//g, (m, p1) =>
-      p1 === 'src' ? 'src="../' : "background-image:url('../"
-    );
+    // admin.html vive en la raíz, igual que index.html, por lo que las
+    // rutas de las plantillas se pueden usar sin transformarlas.
+    const html = render(entry);
 
     previewFrame.srcdoc = `<!doctype html>
 <html><head>
-<link rel="stylesheet" href="../css/global.css">
-<link rel="stylesheet" href="../css/templates/${cssFile}.css">
+<link rel="stylesheet" href="./css/global.css">
+<link rel="stylesheet" href="./css/${cssFile}.css">
 <style>html,body{height:100%;overflow:hidden}</style>
 </head>
 <body>

@@ -1,5 +1,5 @@
 // render.js
-// Lee data/content.json, arma cada <section> con la plantilla que le
+// Lee content.json, arma cada <section> con la plantilla que le
 // corresponde y recién ahí inicializa el loop infinito (que necesita
 // las secciones ya en el DOM para calcular alturas).
 
@@ -11,14 +11,14 @@
 
   let sections;
   try {
-    const res = await fetch('./data/content.json');
+    const res = await fetch('./content.json');
     if (!res.ok) throw new Error(`content.json respondió ${res.status}`);
     sections = await res.json();
   } catch (err) {
     magazine.innerHTML = `
       <section class="section" style="display:grid;place-items:center;background:#14120f;color:#ece6d8;padding:24px;text-align:center;font-family:Arial,sans-serif">
         <div>
-          <p style="font-family:'JetBrains Mono',monospace;font-size:12px;letter-spacing:.1em;opacity:.7">ERROR AL CARGAR data/content.json</p>
+          <p style="font-family:'JetBrains Mono',monospace;font-size:12px;letter-spacing:.1em;opacity:.7">ERROR AL CARGAR content.json</p>
           <p style="max-width:520px;margin:12px auto 0">${err.message}. Si estás abriendo el archivo directo (file://), corré un servidor local — por ejemplo <code>npx serve</code> — porque los navegadores bloquean fetch() a archivos locales.</p>
         </div>
       </section>`;
@@ -43,9 +43,9 @@
     }
     // La plantilla "cover" pinta su imagen de fondo vía una custom
     // property (--cover-image) para poder combinarla con el degradé
-    // de contraste que vive en css/templates/cover.css.
+    // de contraste que vive en css/cover.css.
     const style = entry.template === 'cover' && entry.backgroundImage
-      ? ` style="--cover-image:url('${entry.backgroundImage}')"`
+      ? ` style="--cover-image:url('${entry.backgroundImage.replace(/^\./, '')}')"`
       : '';
     return `<section class="section tpl-${entry.template}" data-section="${position}"${style}>${render(entry)}</section>`;
   }).join('');
