@@ -1,0 +1,61 @@
+.tpl-photoFeature {
+  background: var(--ink);
+}
+
+.photo-feature__img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: saturate(0.82) contrast(1.05);
+}
+
+/* Panel tipo subtítulo de cine: caja acotada, no un scrim de toda
+   la imagen — la foto respira, el texto es una intervención mínima. */
+.photo-feature__panel {
+  position: absolute;
+  left: clamp(20px, 4vw, 56px);
+  right: clamp(20px, 4vw, 56px);
+  bottom: clamp(20px, 4vw, 56px);
+  max-width: 620px;
+  padding: clamp(20px, 2.6vw, 32px);
+  background: rgba(20, 18, 15, 0.72);
+  backdrop-filter: blur(6px);
+  color: var(--paper);
+}
+
+.photo-feature__kicker {
+  margin: 0 0 10px;
+  font-family: var(--font-mono);
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 0.16em;
+  color: var(--signal);
+}
+
+.photo-feature__title {
+  margin: 0 0 12px;
+  font-family: var(--font-display);
+  font-weight: 340;
+  font-size: clamp(32px, 4.4vw, 62px);
+  line-height: 0.92;
+  letter-spacing: -0.01em;
+}
+
+.photo-feature__body {
+  margin: 0;
+  max-width: 46ch;
+  font-size: clamp(13px, 1.1vw, 15px);
+  line-height: 1.55;
+  opacity: 0.85;
+}
+
+@media (max-width: 700px) {
+  .photo-feature__panel {
+    left: 16px;
+    right: 16px;
+    bottom: 16px;
+    max-width: none;
+  }
+}

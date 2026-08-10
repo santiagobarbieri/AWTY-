@@ -1,0 +1,115 @@
+[
+  {
+    "id": "01",
+    "template": "cover",
+    "eyebrow": "AWTY?",
+    "title": "ARE WE<br>THERE YET?",
+    "issueLine": "AGOSTO 2026 \\\\ blink and you will miss it.",
+    "backgroundImage": "./assets/images/S1bg.jpg"
+  },
+  {
+    "id": "02",
+    "template": "index",
+    "issueLabel": "Issue 01 — Agosto 2026",
+    "heading": "CONTENIDOS",
+    "items": [
+      { "number": "03", "title": "Animales en la niebla", "tag": "Ensayo visual" },
+      { "number": "04", "title": "El archivo imposible", "tag": "Objetos encontrados" },
+      { "number": "06", "title": "Geese", "tag": "Ruido desde New York" },
+      { "number": "07", "title": "La luz encendida", "tag": "Escena y artificio" },
+      { "number": "09", "title": "Salir de noche", "tag": "Crónica del borde" }
+    ],
+    "note": "Una revista sobre música, imágenes y cosas que aparecen cuando nadie está mirando."
+  },
+  {
+    "id": "03",
+    "template": "photoFeature",
+    "image": "./assets/images/3471bc34cb700f7190a288e3f4450d99.jpg",
+    "imageAlt": "Ovejas iluminadas sobre una montaña cubierta de nubes",
+    "kicker": "Ensayo visual / 03",
+    "title": "ANIMALES<br>EN LA<br>NIEBLA",
+    "body": "La noche vuelve extrañas las cosas conocidas. Un segundo y el campo parece otro planeta."
+  },
+  {
+    "id": "04",
+    "template": "duoImage",
+    "kicker": "Archivo accidental / 04",
+    "title": "TODO<br>GUARDA<br>UNA SEÑAL",
+    "images": [
+      { "src": "./assets/images/11001598705_777006eb2e_o.jpg", "alt": "Detalle abstracto de colores sobre una superficie", "caption": "Materia / sin fecha" },
+      { "src": "./assets/images/e88c8208292e743ed54abef80ce8eac1.jpg", "alt": "Hombre de pie detrás de una lámpara", "caption": "Ensayo de luz / toma 08" }
+    ],
+    "note": "Coleccionar no es detener el tiempo. Es dejar que dos imágenes lejanas conversen."
+  },
+  {
+    "id": "05",
+    "template": "quote",
+    "label": "Intermedio",
+    "quote": "Una revista no termina en la página. Se queda haciendo ruido en otro lugar.",
+    "tags": ["READ", "LISTEN", "REPEAT"]
+  },
+  {
+    "id": "06",
+    "template": "article",
+    "backgroundImage": "./assets/images/S6.jpg",
+    "topLabel": "Music selection: Aug 10.",
+    "title": "GEESE",
+    "subtitle": "The band from New York.",
+    "articleKicker": "New York / Field Notes",
+    "articleTitle": "RUIDO PARA UNA CIUDAD QUE NO DUERME",
+    "author": "Por Vera Ledesma",
+    "paragraphs": [
+      "En un subsuelo de Brooklyn, mientras el tren retumba bajo el piso y una lámpara insiste en parpadear, Geese afina como si estuviera armando una máquina. Cada instrumento avanza en una dirección diferente, pero el choque termina formando una sola criatura: nerviosa, imprevisible y extrañamente precisa.",
+      "La banda creció entre salas de ensayo prestadas, cables enredados y conciertos donde la mitad del público todavía no sabía qué estaba escuchando. Esa incertidumbre se volvió parte de su lenguaje.",
+      "\"Nos interesa el momento en que una canción casi se rompe\", dice uno de sus integrantes en esta entrevista imaginaria. No habla de caos gratuito, sino de tensión: tocar lo suficientemente cerca del borde como para que cada decisión importe.",
+      "Nueva York aparece en su música sin necesidad de ser nombrada. Está en la urgencia, en las capas que compiten por espacio y en la sensación de que algo distinto puede ocurrir al doblar cualquier esquina.",
+      "Antes de irnos, vuelven a tocar el mismo fragmento. Esta vez dura menos de un minuto y suena completamente distinto. Quizás ahí esté la clave: para Geese, una canción no es un destino fijo, sino una pregunta que cambia cada vez que alguien intenta responderla."
+    ],
+    "note": "Este reportaje es una pieza editorial ficticia creada para ARE WE THERE YET?"
+  },
+  {
+    "id": "07",
+    "template": "photoFeature",
+    "image": "./assets/images/e88c8208292e743ed54abef80ce8eac1.jpg",
+    "imageAlt": "Intérprete de pie detrás de una lámpara encendida",
+    "kicker": "Escena / 07",
+    "title": "LA LUZ<br>ES OTRO<br>INSTRUMENTO",
+    "body": "Un escenario vacío nunca está vacío. Hay una lámpara, un cuerpo, la expectativa de que algo empiece."
+  },
+  {
+    "id": "08",
+    "template": "listFeature",
+    "kicker": "Manual de escucha / 08",
+    "title": "SUBÍ<br>EL<br>VOLUMEN",
+    "image": "./assets/images/0ce7b46d43fa153ce62815a46278fe35.jpg",
+    "imageAlt": "Persona con auriculares oscuros escuchando música",
+    "steps": [
+      "Elegí un disco que nunca terminaste.",
+      "Apagá las notificaciones.",
+      "Escuchá también el espacio entre canciones.",
+      "Cuando termine, no pongas nada durante un minuto."
+    ]
+  },
+  {
+    "id": "09",
+    "template": "photoFeature",
+    "image": "./assets/images/e9c12475e10e368cbd080475eed7a7cf.jpg",
+    "imageAlt": "Casa rural y caballos bajo un cielo azul nocturno",
+    "kicker": "Crónica / 09 — Por Inés Valdivia",
+    "title": "SALIR<br>DE NOCHE",
+    "body": "A las tres de la mañana el camino pierde sus nombres. Queda una ventana encendida y una radio que llega desde algún cuarto."
+  },
+  {
+    "id": "10",
+    "template": "outro",
+    "image": "./assets/images/b1cd5700b1bbf4c3e665c10b6b25011a.jpg",
+    "imageAlt": "Figura con sombrero y fuego sobre el hombro frente a montañas",
+    "kicker": "AWTY? — Issue 01",
+    "title": "THIS IS<br>NOT THE<br>END.",
+    "credits": [
+      "Dirección editorial: Alma Rivas",
+      "Diseño y código: Studio AWTY?",
+      "Buenos Aires / 2026"
+    ]
+  }
+]

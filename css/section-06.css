@@ -1,0 +1,109 @@
+.S6 {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(320px, 42vw);
+  align-items: center;
+  gap: clamp(28px, 5vw, 88px);
+  padding: clamp(24px, 4vw, 64px);
+  background-image: url("../assets/images/S6.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: #2bff00;
+}
+
+.S6_div-intro {
+  min-width: 0;
+}
+
+.S6_p {
+  margin: 0;
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 0.22em;
+}
+
+.S6_h1 {
+  margin: 22px 0;
+  font-size: clamp(72px, 12vw, 210px);
+  line-height: 0.78;
+  letter-spacing: -0.08em;
+  font-weight: 900;
+}
+
+.S6_article {
+  width: min(42vw, 620px);
+  max-width: 100%;
+  aspect-ratio: 1;
+  justify-self: end;
+  overflow-y: auto;
+  overscroll-behavior: contain;
+  padding: clamp(24px, 3.5vw, 56px);
+  background: #65f23d;
+  color: #0b2106;
+  scrollbar-color: #0b2106 transparent;
+  scrollbar-width: thin;
+}
+
+.S6_article-kicker {
+  margin: 0 0 34px;
+  font-size: 11px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+}
+
+.S6_h3 {
+  margin: 0 0 24px;
+  font-size: clamp(30px, 4vw, 64px);
+  line-height: 0.88;
+  letter-spacing: -0.055em;
+}
+
+.S6_article-author {
+  margin: 0 0 24px;
+  padding-bottom: 18px;
+  border-bottom: 1px solid currentColor;
+  font-size: 12px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+}
+
+.S6_article-body {
+  font-family: Georgia, 'Times New Roman', serif;
+  font-size: clamp(15px, 1.25vw, 19px);
+  line-height: 1.55;
+}
+
+.S6_article-body p {
+  margin: 0 0 1.2em;
+}
+
+.S6_article-note {
+  padding-top: 18px;
+  border-top: 1px solid currentColor;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 10px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+}
+
+@media (max-width: 760px) {
+  .S6 {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto minmax(0, 1fr);
+    align-content: center;
+    gap: 20px;
+  }
+
+  .S6_h1 {
+    margin: 12px 0;
+    font-size: clamp(56px, 20vw, 100px);
+  }
+
+  .S6_article {
+    width: min(100%, 52vh);
+    max-height: 50vh;
+    justify-self: center;
+  }
+}

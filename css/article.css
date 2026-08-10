@@ -1,0 +1,127 @@
+.tpl-article {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(320px, 42vw);
+  align-items: center;
+  gap: clamp(24px, 4vw, 64px);
+  padding: clamp(24px, 4vw, 64px);
+  background: var(--ink);
+}
+
+.article__intro {
+  min-width: 0;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: clamp(20px, 3vw, 40px);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: var(--paper);
+}
+
+.article__top-label {
+  margin: 0 0 14px;
+  font-family: var(--font-mono);
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 0.18em;
+  color: var(--signal);
+}
+
+.article__title {
+  margin: 0 0 10px;
+  font-family: var(--font-display);
+  font-weight: 900;
+  font-size: clamp(56px, 9vw, 150px);
+  line-height: 0.82;
+  letter-spacing: -0.02em;
+}
+
+.article__subtitle {
+  margin: 0;
+  font-size: clamp(13px, 1.2vw, 16px);
+  opacity: 0.75;
+}
+
+.article__panel {
+  width: min(42vw, 620px);
+  max-width: 100%;
+  height: 100%;
+  max-height: 84vh;
+  justify-self: end;
+  overflow-y: auto;
+  overscroll-behavior: contain;
+  padding: clamp(24px, 3.5vw, 56px);
+  background: var(--paper);
+  color: var(--ink);
+  scrollbar-color: var(--oxide) transparent;
+  scrollbar-width: thin;
+}
+
+.article__kicker {
+  margin: 0 0 30px;
+  font-family: var(--font-mono);
+  font-size: 11px;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.16em;
+  color: var(--oxide);
+}
+
+.article__headline {
+  margin: 0 0 22px;
+  font-family: var(--font-display);
+  font-weight: 600;
+  font-size: clamp(28px, 3.6vw, 54px);
+  line-height: 0.98;
+  letter-spacing: -0.01em;
+}
+
+.article__author {
+  margin: 0 0 22px;
+  padding-bottom: 16px;
+  border-bottom: 1px solid rgba(20, 18, 15, 0.2);
+  font-family: var(--font-mono);
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+}
+
+.article__body {
+  font-family: var(--font-display);
+  font-size: clamp(15px, 1.2vw, 18px);
+  line-height: 1.6;
+}
+
+.article__body p {
+  margin: 0 0 1.2em;
+}
+
+.article__note {
+  padding-top: 16px;
+  border-top: 1px solid rgba(20, 18, 15, 0.2);
+  font-family: var(--font-mono);
+  font-size: 10px;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  opacity: 0.6;
+}
+
+@media (max-width: 760px) {
+  .tpl-article {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto minmax(0, 1fr);
+    gap: 16px;
+  }
+
+  .article__title {
+    font-size: clamp(48px, 18vw, 92px);
+  }
+
+  .article__panel {
+    width: 100%;
+    max-height: 52vh;
+    justify-self: center;
+  }
+}

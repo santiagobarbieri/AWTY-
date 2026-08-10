@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="ARE WE THERE YET? — revista digital de diseño, instalaciones, música y ensayo.">
+  <title>ARE WE THERE YET?</title>
+
+  <link rel="stylesheet" href="./css/global.css">
+  <link rel="stylesheet" href="./css/templates/cover.css">
+  <link rel="stylesheet" href="./css/templates/index.css">
+  <link rel="stylesheet" href="./css/templates/photo-feature.css">
+  <link rel="stylesheet" href="./css/templates/duo-image.css">
+  <link rel="stylesheet" href="./css/templates/quote.css">
+  <link rel="stylesheet" href="./css/templates/article.css">
+  <link rel="stylesheet" href="./css/templates/list-feature.css">
+  <link rel="stylesheet" href="./css/templates/outro.css">
+</head>
+<body>
+  <!--
+    El contenido ya no vive acá. Cada sección se arma en tiempo de
+    carga a partir de /data/content.json + las plantillas definidas
+    en /js/templates.js. Para agregar, sacar o reordenar secciones,
+    editá ese JSON (a mano o con /admin/index.html) — no hace falta
+    tocar este archivo.
+  -->
+  <main class="magazine" id="magazine" aria-label="Revista ARE WE THERE YET?"></main>
+
+  <div class="section-indicator" aria-hidden="true">
+    <span class="section-indicator__dot"></span>
+    <span id="sectionIndicator">01</span><span id="sectionIndicatorTotal" class="section-indicator__total">/10</span>
+  </div>
+
+  <script src="./js/infinite-scroll.js"></script>
+  <script src="./js/templates.js"></script>
+  <script src="./js/render.js"></script>
+</body>
+</html>

@@ -1,0 +1,125 @@
+@import url("https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,340;0,9..144,600;0,9..144,900;1,9..144,500&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap");
+
+:root {
+  --viewport-height: 100dvh;
+
+  /* Paleta cinemática — negativo cálido, no negro puro; hueso, no
+     blanco puro; óxido en vez del clásico terracota de IA; musgo y
+     mostaza apagado como acentos secundarios. */
+  --ink: #14120f;
+  --paper: #ece6d8;
+  --oxide: #7a3420;
+  --moss: #454f3f;
+  --signal: #cbb45c;
+
+  --font-display: 'Fraunces', Georgia, 'Times New Roman', serif;
+  --font-body: 'Inter', Arial, Helvetica, sans-serif;
+  --font-mono: 'JetBrains Mono', 'Courier New', monospace;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+::selection {
+  background-color: var(--oxide);
+  color: var(--paper);
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  background: var(--ink);
+}
+
+body {
+  overflow: hidden;
+  font-family: var(--font-body);
+  letter-spacing: -0.01em;
+}
+
+.magazine {
+  width: 100%;
+  height: var(--viewport-height);
+  overflow-y: auto;
+  overflow-x: hidden;
+  overscroll-behavior-y: none;
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: none;
+}
+
+.magazine::-webkit-scrollbar {
+  display: none;
+}
+
+.section {
+  position: relative;
+  width: 100%;
+  height: var(--viewport-height);
+  min-height: var(--viewport-height);
+  overflow: hidden;
+  --progress: 0;
+  --fade: 1;
+}
+
+/* Parallax continuo: el contenido de cada sección se corre y funde
+   en proporción directa a --progress/--fade, actualizado en cada
+   frame de scroll para que siga al gesto sin delay. */
+.section > * {
+  transform: translateY(calc(var(--progress) * 44px));
+  opacity: var(--fade);
+  will-change: transform, opacity;
+}
+
+/* Indicador tipo "timecode de cinta" — la firma visual del sitio.
+   En vez de un número decorativo, se lee como el contador de un
+   grabador de archivo: luz piloto + posición / total del reel. */
+.section-indicator {
+  position: fixed;
+  right: 20px;
+  bottom: 18px;
+  z-index: 100;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  mix-blend-mode: difference;
+  color: var(--paper);
+  font-family: var(--font-mono);
+  font-size: 12px;
+  letter-spacing: 0.08em;
+  pointer-events: none;
+}
+
+.section-indicator__dot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: var(--signal);
+  box-shadow: 0 0 6px var(--signal);
+}
+
+.section-indicator__total {
+  opacity: 0.55;
+}
+
+@media (max-width: 700px) {
+  .section-indicator {
+    right: 16px;
+    bottom: 14px;
+    font-size: 11px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .magazine {
+    scroll-behavior: auto;
+  }
+
+  .section > * {
+    transform: none !important;
+    opacity: 1 !important;
+  }
+}

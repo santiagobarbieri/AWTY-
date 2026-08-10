@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AWTY? — Panel de edición</title>
+  <link rel="stylesheet" href="../css/global.css">
+  <link rel="stylesheet" href="./admin.css">
+</head>
+<body>
+  <div class="admin">
+    <header class="admin__header">
+      <div>
+        <p class="admin__eyebrow">AWTY? — Panel de edición</p>
+        <h1 class="admin__title">Are We There Yet?</h1>
+      </div>
+      <div class="admin__actions">
+        <span id="adminStatus" class="admin__status"></span>
+        <button id="btnCopy" class="admin__btn admin__btn--ghost" type="button">Copiar JSON</button>
+        <button id="btnDownload" class="admin__btn" type="button">Descargar content.json</button>
+      </div>
+    </header>
+
+    <p class="admin__note">
+      Este panel edita <code>data/content.json</code> en tu navegador. No hay backend: cuando termines,
+      descargá el archivo y reemplazá el que está en tu repo (mismo flujo manual que ya usás en ORFEO).
+      Las imágenes se referencian por su ruta dentro de <code>assets/images/</code> — subilas al repo primero.
+    </p>
+
+    <div class="admin__layout">
+      <aside class="admin__list-pane">
+        <div class="admin__list-header">
+          <h2>Secciones</h2>
+          <select id="addTemplateSelect" class="admin__select"></select>
+          <button id="btnAdd" class="admin__btn admin__btn--small" type="button">+ Agregar</button>
+        </div>
+        <ol id="sectionList" class="admin__list"></ol>
+      </aside>
+
+      <section class="admin__editor-pane">
+        <div id="editorEmpty" class="admin__empty">Elegí una sección de la izquierda para editarla, o agregá una nueva.</div>
+        <form id="editorForm" class="admin__form" hidden></form>
+      </section>
+
+      <section class="admin__preview-pane">
+        <div class="admin__preview-header">
+          <h2>Vista previa</h2>
+          <span class="admin__preview-hint">Igual al render real del sitio</span>
+        </div>
+        <div class="admin__preview-frame-wrap">
+          <iframe id="previewFrame" class="admin__preview-frame" title="Vista previa de la sección"></iframe>
+        </div>
+      </section>
+    </div>
+  </div>
+
+  <script src="../js/schema.js"></script>
+  <script src="../js/templates.js"></script>
+  <script src="./admin.js"></script>
+</body>
+</html>

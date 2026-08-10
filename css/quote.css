@@ -1,0 +1,52 @@
+.tpl-quote {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: clamp(18px, 3vw, 32px);
+  padding: clamp(24px, 6vw, 96px);
+  background: var(--paper);
+  color: var(--ink);
+  text-align: center;
+}
+
+.quote__label {
+  margin: 0;
+  font-family: var(--font-mono);
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  color: var(--oxide);
+}
+
+.quote__text {
+  margin: 0;
+  max-width: 18ch;
+  font-family: var(--font-display);
+  font-style: italic;
+  font-weight: 500;
+  font-size: clamp(32px, 5.6vw, 84px);
+  line-height: 1.04;
+  letter-spacing: -0.01em;
+}
+
+.quote__tags {
+  display: flex;
+  gap: 14px;
+  font-family: var(--font-mono);
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 0.14em;
+  opacity: 0.55;
+}
+
+.quote__tags span::after {
+  content: '·';
+  margin-left: 14px;
+  opacity: 0.6;
+}
+
+.quote__tags span:last-child::after {
+  content: '';
+  margin: 0;
+}
