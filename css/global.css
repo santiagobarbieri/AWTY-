@@ -1,20 +1,15 @@
-@import url("https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,340;0,9..144,600;0,9..144,900;1,9..144,500&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap");
-
 :root {
   --viewport-height: 100dvh;
 
-  /* Paleta cinemática — negativo cálido, no negro puro; hueso, no
-     blanco puro; óxido en vez del clásico terracota de IA; musgo y
-     mostaza apagado como acentos secundarios. */
-  --ink: #14120f;
-  --paper: #ece6d8;
-  --oxide: #7a3420;
-  --moss: #454f3f;
-  --signal: #cbb45c;
+  --ink: #111;
+  --paper: #f4f2ec;
+  --oxide: #1c18ff;
+  --moss: #123d19;
+  --signal: #5cff38;
 
-  --font-display: 'Fraunces', Georgia, 'Times New Roman', serif;
-  --font-body: 'Inter', Arial, Helvetica, sans-serif;
-  --font-mono: 'JetBrains Mono', 'Courier New', monospace;
+  --font-display: Arial, Helvetica, sans-serif;
+  --font-body: Arial, Helvetica, sans-serif;
+  --font-mono: Arial, Helvetica, sans-serif;
 }
 
 * {
@@ -38,7 +33,7 @@ body {
 body {
   overflow: hidden;
   font-family: var(--font-body);
-  letter-spacing: -0.01em;
+  letter-spacing: -0.02em;
 }
 
 .magazine {

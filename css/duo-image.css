@@ -1,15 +1,18 @@
 .tpl-duoImage {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-template-rows: auto 1fr auto;
-  gap: clamp(14px, 2vw, 24px);
-  padding: clamp(24px, 4vw, 56px);
-  background: var(--paper);
-  color: var(--ink);
+  grid-template-rows: 1fr;
+  gap: 0;
+  padding: 0;
+  background: var(--ink);
+  color: white;
 }
 
 .duo-image__title-block {
-  grid-column: 1 / -1;
+  position: absolute;
+  z-index: 2;
+  left: clamp(24px, 5vw, 72px);
+  top: clamp(24px, 5vw, 72px);
 }
 
 .duo-image__kicker {
@@ -18,44 +21,47 @@
   font-size: 11px;
   text-transform: uppercase;
   letter-spacing: 0.14em;
-  color: var(--oxide);
+  color: var(--signal);
 }
 
 .duo-image__title {
   margin: 0;
   font-family: var(--font-display);
   font-weight: 600;
-  font-size: clamp(32px, 5vw, 84px);
-  line-height: 0.86;
-  letter-spacing: -0.01em;
+  font-size: clamp(48px, 7vw, 120px);
+  line-height: 0.78;
+  letter-spacing: -0.07em;
 }
 
 .duo-image__figure {
   margin: 0;
   position: relative;
-  min-height: 0;
+  min-height: 100%;
+  overflow: hidden;
 }
 
 .duo-image__figure--one {
-  align-self: end;
+  align-self: stretch;
 }
 
 .duo-image__figure--two {
-  align-self: start;
-  margin-top: clamp(20px, 4vw, 56px);
+  align-self: stretch;
+  margin-top: 0;
 }
 
 .duo-image__figure img {
   display: block;
   width: 100%;
   height: 100%;
-  max-height: 42vh;
+  max-height: none;
   object-fit: cover;
-  filter: saturate(0.82) contrast(1.05);
+  filter: brightness(0.72) contrast(1.08);
 }
 
 .duo-image__figure figcaption {
-  margin-top: 6px;
+  position: absolute;
+  left: 20px;
+  bottom: 18px;
   font-family: var(--font-mono);
   font-size: 10px;
   text-transform: uppercase;
@@ -64,18 +70,22 @@
 }
 
 .duo-image__note {
-  grid-column: 1 / -1;
+  position: absolute;
+  z-index: 2;
+  right: clamp(24px, 5vw, 72px);
+  bottom: clamp(24px, 5vw, 72px);
   margin: 0;
   max-width: 52ch;
   font-size: 13px;
   line-height: 1.5;
-  opacity: 0.7;
+  color: white;
+  opacity: 0.85;
 }
 
 @media (max-width: 700px) {
   .tpl-duoImage {
     grid-template-columns: 1fr;
-    overflow-y: auto;
+    grid-template-rows: 1fr 1fr;
   }
 
   .duo-image__figure--one,
@@ -84,6 +94,6 @@
   }
 
   .duo-image__figure img {
-    max-height: 26vh;
+    max-height: none;
   }
 }

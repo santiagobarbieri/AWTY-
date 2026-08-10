@@ -4,7 +4,7 @@
   align-items: center;
   justify-content: center;
   gap: clamp(18px, 3vw, 32px);
-  padding: clamp(24px, 6vw, 96px);
+  padding: clamp(36px, 9vw, 150px);
   background: var(--paper);
   color: var(--ink);
   text-align: center;
@@ -23,11 +23,11 @@
   margin: 0;
   max-width: 18ch;
   font-family: var(--font-display);
-  font-style: italic;
-  font-weight: 500;
-  font-size: clamp(32px, 5.6vw, 84px);
-  line-height: 1.04;
-  letter-spacing: -0.01em;
+  font-style: normal;
+  font-weight: 800;
+  font-size: clamp(42px, 7vw, 112px);
+  line-height: 0.98;
+  letter-spacing: -0.06em;
 }
 
 .quote__tags {
