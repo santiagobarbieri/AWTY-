@@ -1,13 +1,5 @@
 [
   {
-    "id": "01",
-    "template": "cover",
-    "eyebrow": "AWTY?",
-    "title": "ARE WE<br>THERE YET?",
-    "issueLine": "AGOSTO 2026 \\\\ blink and you will miss it.",
-    "backgroundImage": "./assets/images/S1bg.jpg"
-  },
-  {
     "id": "02",
     "template": "index",
     "issueLabel": "Issue 01 — Agosto 2026",
