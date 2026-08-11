@@ -15,9 +15,9 @@
     "items": [
       { "number": "10", "title": "The Room Between Rooms", "tag": "Visual essay" },
       { "number": "12", "title": "Judas.", "tag": "Archival music story" },
-      { "number": "14", "title": "Two Idiots in Berlin", "tag": "Cultural story" },
-      { "number": "17", "title": "Print It Before the Police Arrive", "tag": "Visual archive" },
-      { "number": "21", "title": "I Love NY Was Drawn in a Taxi", "tag": "Design anecdote" }
+      { "number": "13", "title": "Two Idiots in Berlin", "tag": "Cultural story" },
+      { "number": "16", "title": "Print It Before the Police Arrive", "tag": "Visual archive" },
+      { "number": "19", "title": "I Love NY Was Drawn in a Taxi", "tag": "Design anecdote" }
     ],
     "note": "A magazine about music, images and the things that appear when nobody is looking."
   },
@@ -442,21 +442,5 @@
     "accentColor": "#ff0000",
     "imageFit": "cover",
     "imagePosition": "center"
-  },
-  {
-    "template": "videoFeature",
-    "youtubeUrl": "https://www.youtube.com/watch?v=GDv8Iei3h4Y",
-    "kicker": "WATCH THIS AND STOP SCROLLING",
-    "title": "BIG TAKE",
-    "caption": "(2024) - by Alex Brooks, 16mm Short Film",
-    "autoplay": "1",
-    "backgroundColor": "",
-    "textColor": "#fa0000",
-    "accentColor": "#ffffff",
-    "imageFit": "",
-    "imagePosition": "",
-    "buttonLabel": "",
-    "buttonUrl": "",
-    "buttonNewTab": ""
   }
 ]
