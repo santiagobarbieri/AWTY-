@@ -4,6 +4,30 @@
 // <section class="section"> lo arma render.js, acá solo va el
 // contenido específico de cada molde.
 
+window.AWTY_SECTION_ATTRIBUTES = d => {
+  const styles = [];
+  if (d.backgroundColor) styles.push(`background-color:${d.backgroundColor}`);
+  if (d.textColor) styles.push(`color:${d.textColor}`);
+  if (d.accentColor) styles.push(`--custom-accent:${d.accentColor}`);
+
+  const attrs = [];
+  if (styles.length) attrs.push(`style="${styles.join(';')}"`);
+  if (d.imageFit) attrs.push(`data-image-fit="${d.imageFit}"`);
+  if (d.imagePosition) attrs.push(`data-image-position="${d.imagePosition}"`);
+  return attrs.length ? ` ${attrs.join(' ')}` : '';
+};
+
+window.AWTY_SECTION_EXTRAS = d => {
+  if (!d.buttonLabel || !d.buttonUrl) return '';
+  const newTab = d.buttonNewTab === '1' ? ' target="_blank" rel="noopener noreferrer"' : '';
+  return `<a class="section-cta" href="${d.buttonUrl}"${newTab}>${d.buttonLabel}<span aria-hidden="true">↗</span></a>`;
+};
+
+function youtubeId(url = '') {
+  const match = String(url).match(/(?:youtu\.be\/|youtube\.com\/(?:watch\?v=|embed\/|shorts\/))([\w-]{11})/);
+  return match ? match[1] : '';
+}
+
 window.AWTY_TEMPLATES = {
   cover(d) {
     return `
@@ -111,6 +135,24 @@ window.AWTY_TEMPLATES = {
       <p class="outro__kicker">${d.kicker || ''}</p>
       <h2 class="outro__title">${d.title || ''}</h2>
       <div class="outro__credits">${credits}</div>
+    `;
+  },
+
+  videoFeature(d) {
+    const id = youtubeId(d.youtubeUrl);
+    const autoplay = d.autoplay === '1';
+    const params = autoplay ? '?autoplay=1&mute=1&loop=1&playlist=' + id + '&controls=0' : '?rel=0';
+    const media = id
+      ? `<iframe class="video-feature__iframe" src="https://www.youtube-nocookie.com/embed/${id}${params}" title="${d.title || 'Video'}" allow="autoplay; encrypted-media; picture-in-picture" allowfullscreen></iframe>`
+      : '<div class="video-feature__empty">Pegá una URL válida de YouTube</div>';
+    return `
+      ${media}
+      <div class="video-feature__shade"></div>
+      <div class="video-feature__content">
+        <p class="video-feature__kicker">${d.kicker || ''}</p>
+        <h2 class="video-feature__title">${d.title || ''}</h2>
+        <p class="video-feature__caption">${d.caption || ''}</p>
+      </div>
     `;
   }
 };

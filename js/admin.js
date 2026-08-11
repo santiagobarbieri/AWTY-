@@ -158,7 +158,15 @@
     hint.textContent = def.hint || '';
     editorForm.appendChild(hint);
 
+    let currentGroup = '';
     def.fields.forEach(field => {
+      if (field.group && field.group !== currentGroup) {
+        const groupTitle = document.createElement('h3');
+        groupTitle.className = 'admin__group-title';
+        groupTitle.textContent = field.group;
+        editorForm.appendChild(groupTitle);
+        currentGroup = field.group;
+      }
       editorForm.appendChild(buildField(entry, field));
     });
 
@@ -185,7 +193,7 @@
     } else if (field.type === 'image') {
       const input = document.createElement('input');
       input.type = 'text';
-      input.placeholder = './assets/images/nombre-de-archivo.jpg';
+      input.placeholder = './assets/images/foto.jpg o https://...';
       input.value = entry[field.key] || '';
 
       const img = document.createElement('img');
@@ -203,6 +211,41 @@
       wrap.appendChild(input);
       wrap.appendChild(img);
 
+    } else if (field.type === 'color') {
+      const row = document.createElement('div');
+      row.className = 'admin__color-row';
+      const picker = document.createElement('input');
+      picker.type = 'color';
+      picker.value = entry[field.key] || '#111111';
+      const value = document.createElement('input');
+      value.type = 'text';
+      value.placeholder = 'Vacío = color original';
+      value.value = entry[field.key] || '';
+      const updateColor = next => {
+        entry[field.key] = next;
+        value.value = next;
+        if (next) picker.value = next;
+        onFieldChange(entry);
+      };
+      picker.addEventListener('input', () => updateColor(picker.value));
+      value.addEventListener('input', () => updateColor(value.value));
+      row.appendChild(picker);
+      row.appendChild(value);
+      wrap.appendChild(row);
+
+    } else if (field.type === 'select') {
+      const select = document.createElement('select');
+      select.className = 'admin__select';
+      select.innerHTML = (field.options || [])
+        .map(option => `<option value="${option.value}">${option.label}</option>`)
+        .join('');
+      select.value = entry[field.key] || '';
+      select.addEventListener('change', () => {
+        entry[field.key] = select.value;
+        onFieldChange(entry);
+      });
+      wrap.appendChild(select);
+
     } else if (field.type === 'list-text') {
       const textarea = document.createElement('textarea');
       textarea.value = (entry[field.key] || []).join('\n');
@@ -217,7 +260,8 @@
 
     } else {
       const input = document.createElement('input');
-      input.type = 'text';
+      input.type = field.type === 'url' ? 'url' : 'text';
+      if (field.type === 'url') input.placeholder = 'https://...';
       input.value = entry[field.key] || '';
       input.addEventListener('input', () => {
         entry[field.key] = input.value;
@@ -252,7 +296,7 @@
           const subInput = document.createElement('input');
           subInput.type = 'text';
           subInput.value = item[sub.key] || '';
-          subInput.placeholder = sub.isImage ? './assets/images/archivo.jpg' : '';
+          subInput.placeholder = sub.isImage ? './assets/images/foto.jpg o https://...' : '';
           subInput.addEventListener('input', () => {
             item[sub.key] = subInput.value;
             onFieldChange(entry);
@@ -323,7 +367,7 @@
     const templateFileMap = {
       cover: 'cover', index: 'index', photoFeature: 'photo-feature',
       duoImage: 'duo-image', quote: 'quote', article: 'article',
-      listFeature: 'list-feature', outro: 'outro'
+      listFeature: 'list-feature', outro: 'outro', videoFeature: 'video-feature'
     };
     const cssFile = templateFileMap[entry.template] || entry.template;
 
@@ -338,7 +382,7 @@
 <style>html,body{height:100%;overflow:hidden}</style>
 </head>
 <body>
-<section class="section tpl-${entry.template}">${html}</section>
+<section class="section tpl-${entry.template}"${window.AWTY_SECTION_ATTRIBUTES(entry)}>${html}${window.AWTY_SECTION_EXTRAS(entry)}</section>
 </body></html>`;
   }
 

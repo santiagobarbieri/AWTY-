@@ -41,7 +41,9 @@
       console.warn(`AWTY: plantilla desconocida "${entry.template}" (posición ${position})`);
       return '';
     }
-    return `<section class="section tpl-${entry.template}" data-section="${position}">${render(entry)}</section>`;
+    const attributes = window.AWTY_SECTION_ATTRIBUTES(entry);
+    const extras = window.AWTY_SECTION_EXTRAS(entry);
+    return `<section class="section tpl-${entry.template}" data-section="${position}"${attributes}>${render(entry)}${extras}</section>`;
   }).join('');
 
   if (indicatorTotal) {
