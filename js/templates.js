@@ -15,6 +15,7 @@ window.AWTY_SECTION_ATTRIBUTES = d => {
   if (d.imageFit) attrs.push(`data-image-fit="${d.imageFit}"`);
   if (d.imagePosition) attrs.push(`data-image-position="${d.imagePosition}"`);
   if (d.articleLayout) attrs.push(`data-article-layout="${d.articleLayout}"`);
+  if (d.backgroundImage || d.image) attrs.push('data-has-image="true"');
   return attrs.length ? ` ${attrs.join(' ')}` : '';
 };
 
