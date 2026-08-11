@@ -327,10 +327,6 @@
     };
     const cssFile = templateFileMap[entry.template] || entry.template;
 
-    const style = entry.template === 'cover' && entry.backgroundImage
-      ? ` style="--cover-image:url('${entry.backgroundImage.replace(/^\./, '')}')"`
-      : '';
-
     // admin.html vive en la raíz, igual que index.html, por lo que las
     // rutas de las plantillas se pueden usar sin transformarlas.
     const html = render(entry);
@@ -342,7 +338,7 @@
 <style>html,body{height:100%;overflow:hidden}</style>
 </head>
 <body>
-<section class="section tpl-${entry.template}"${style}>${html}</section>
+<section class="section tpl-${entry.template}">${html}</section>
 </body></html>`;
   }
 

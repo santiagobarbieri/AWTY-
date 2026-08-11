@@ -7,6 +7,7 @@
 window.AWTY_TEMPLATES = {
   cover(d) {
     return `
+      <img class="cover__img" src="${d.backgroundImage || ''}" alt="">
       <p class="cover__eyebrow">${d.eyebrow || ''}</p>
       <h1 class="cover__title">${d.title || ''}</h1>
       <p class="cover__issue">${d.issueLine || ''}</p>

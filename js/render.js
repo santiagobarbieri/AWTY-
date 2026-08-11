@@ -41,13 +41,7 @@
       console.warn(`AWTY: plantilla desconocida "${entry.template}" (posición ${position})`);
       return '';
     }
-    // La plantilla "cover" pinta su imagen de fondo vía una custom
-    // property (--cover-image) para poder combinarla con el degradé
-    // de contraste que vive en css/cover.css.
-    const style = entry.template === 'cover' && entry.backgroundImage
-      ? ` style="--cover-image:url('${entry.backgroundImage.replace(/^\./, '')}')"`
-      : '';
-    return `<section class="section tpl-${entry.template}" data-section="${position}"${style}>${render(entry)}</section>`;
+    return `<section class="section tpl-${entry.template}" data-section="${position}">${render(entry)}</section>`;
   }).join('');
 
   if (indicatorTotal) {

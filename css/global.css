@@ -44,6 +44,7 @@ body {
   overscroll-behavior-y: none;
   -webkit-overflow-scrolling: touch;
   scrollbar-width: none;
+  overflow-anchor: none;
 }
 
 .magazine::-webkit-scrollbar {
@@ -58,6 +59,7 @@ body {
   overflow: hidden;
   --progress: 0;
   --fade: 1;
+  overflow-anchor: none;
 }
 
 /* Parallax continuo: el contenido de cada sección se corre y funde
