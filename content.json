@@ -244,5 +244,21 @@
     "buttonLabel": "",
     "buttonUrl": "",
     "buttonNewTab": ""
+  },
+  {
+    "template": "videoFeature",
+    "youtubeUrl": "https://www.youtube.com/watch?v=GDv8Iei3h4Y",
+    "kicker": "WATCH THIS AND STOP SCROLLING",
+    "title": "BIG TAKE",
+    "caption": "(2024) - by Alex Brooks, 16mm Short Film",
+    "autoplay": "1",
+    "backgroundColor": "",
+    "textColor": "#fa0000",
+    "accentColor": "#ffffff",
+    "imageFit": "",
+    "imagePosition": "",
+    "buttonLabel": "",
+    "buttonUrl": "",
+    "buttonNewTab": ""
   }
 ]
