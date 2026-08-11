@@ -4,48 +4,48 @@
     "template": "cover",
     "eyebrow": "AWTY?",
     "title": "ARE WE<br>THERE YET?",
-    "issueLine": "AGOSTO 2026 \\\\ blink and you will miss it.",
+    "issueLine": "AUGUST 2026 \\\\ blink and you will miss it.",
     "backgroundImage": "./assets/images/S1bg.jpg"
   },
   {
     "id": "02",
     "template": "index",
-    "issueLabel": "Issue 01 — Agosto 2026",
-    "heading": "CONTENIDOS",
+    "issueLabel": "Issue 01 — August 2026",
+    "heading": "CONTENTS",
     "items": [
-      { "number": "03", "title": "Animales en la niebla", "tag": "Ensayo visual" },
-      { "number": "04", "title": "El archivo imposible", "tag": "Objetos encontrados" },
-      { "number": "06", "title": "Geese", "tag": "Ruido desde New York" },
-      { "number": "07", "title": "La luz encendida", "tag": "Escena y artificio" },
-      { "number": "09", "title": "Salir de noche", "tag": "Crónica del borde" }
+      { "number": "10", "title": "The Room Between Rooms", "tag": "Visual essay" },
+      { "number": "12", "title": "Judas.", "tag": "Archival music story" },
+      { "number": "14", "title": "Two Idiots in Berlin", "tag": "Cultural story" },
+      { "number": "17", "title": "Print It Before the Police Arrive", "tag": "Visual archive" },
+      { "number": "21", "title": "I Love NY Was Drawn in a Taxi", "tag": "Design anecdote" }
     ],
-    "note": "Una revista sobre música, imágenes y cosas que aparecen cuando nadie está mirando."
+    "note": "A magazine about music, images and the things that appear when nobody is looking."
   },
   {
     "id": "03",
     "template": "photoFeature",
     "image": "./assets/images/3471bc34cb700f7190a288e3f4450d99.jpg",
-    "imageAlt": "Ovejas iluminadas sobre una montaña cubierta de nubes",
-    "kicker": "Ensayo visual / 03",
-    "title": "ANIMALES<br>EN LA<br>NIEBLA",
-    "body": "La noche vuelve extrañas las cosas conocidas. Un segundo y el campo parece otro planeta."
+    "imageAlt": "Sheep illuminated on a mountain above the clouds",
+    "kicker": "Visual essay / 03",
+    "title": "ANIMALS<br>IN THE<br>FOG",
+    "body": "Night makes familiar things strange. For one second, the field looks like another planet."
   },
   {
     "id": "04",
     "template": "duoImage",
-    "kicker": "Archivo accidental / 04",
-    "title": "TODO<br>GUARDA<br>UNA SEÑAL",
+    "kicker": "Accidental archive / 04",
+    "title": "EVERYTHING<br>KEEPS<br>A SIGNAL",
     "images": [
-      { "src": "./assets/images/11001598705_777006eb2e_o.jpg", "alt": "Detalle abstracto de colores sobre una superficie", "caption": "Materia / sin fecha" },
-      { "src": "./assets/images/e88c8208292e743ed54abef80ce8eac1.jpg", "alt": "Hombre de pie detrás de una lámpara", "caption": "Ensayo de luz / toma 08" }
+      { "src": "./assets/images/11001598705_777006eb2e_o.jpg", "alt": "Abstract colors across a textured surface", "caption": "Matter / undated" },
+      { "src": "./assets/images/e88c8208292e743ed54abef80ce8eac1.jpg", "alt": "A man standing behind a lamp", "caption": "Light test / take 08" }
     ],
-    "note": "Coleccionar no es detener el tiempo. Es dejar que dos imágenes lejanas conversen."
+    "note": "Collecting does not stop time. It lets two distant images speak to each other."
   },
   {
     "id": "05",
     "template": "quote",
-    "label": "Intermedio",
-    "quote": "Una revista no termina en la página. Se queda haciendo ruido en otro lugar.",
+    "label": "Interlude",
+    "quote": "A magazine does not end on the page. It keeps making noise somewhere else.",
     "tags": ["READ", "LISTEN", "REPEAT"]
   },
   {
@@ -56,48 +56,48 @@
     "title": "GEESE",
     "subtitle": "The band from New York.",
     "articleKicker": "New York / Field Notes",
-    "articleTitle": "RUIDO PARA UNA CIUDAD QUE NO DUERME",
-    "author": "Por Vera Ledesma",
+    "articleTitle": "NOISE FOR A CITY THAT NEVER SLEEPS",
+    "author": "By Vera Ledesma",
     "paragraphs": [
-      "En un subsuelo de Brooklyn, mientras el tren retumba bajo el piso y una lámpara insiste en parpadear, Geese afina como si estuviera armando una máquina. Cada instrumento avanza en una dirección diferente, pero el choque termina formando una sola criatura: nerviosa, imprevisible y extrañamente precisa.",
-      "La banda creció entre salas de ensayo prestadas, cables enredados y conciertos donde la mitad del público todavía no sabía qué estaba escuchando. Esa incertidumbre se volvió parte de su lenguaje.",
-      "\"Nos interesa el momento en que una canción casi se rompe\", dice uno de sus integrantes en esta entrevista imaginaria. No habla de caos gratuito, sino de tensión: tocar lo suficientemente cerca del borde como para que cada decisión importe.",
-      "Nueva York aparece en su música sin necesidad de ser nombrada. Está en la urgencia, en las capas que compiten por espacio y en la sensación de que algo distinto puede ocurrir al doblar cualquier esquina.",
-      "Antes de irnos, vuelven a tocar el mismo fragmento. Esta vez dura menos de un minuto y suena completamente distinto. Quizás ahí esté la clave: para Geese, una canción no es un destino fijo, sino una pregunta que cambia cada vez que alguien intenta responderla."
+      "In a Brooklyn basement, while the train rumbles beneath the floor and a lamp refuses to stop flickering, Geese tune up as if they were assembling a machine. Every instrument seems to move in a different direction, yet the collision forms one creature: nervous, unpredictable and strangely precise.",
+      "The band grew up between borrowed rehearsal rooms, tangled cables and shows where half the audience still did not know what it was hearing. That uncertainty became part of their language.",
+      "We are interested in the moment when a song almost breaks, says one member in this imagined interview. This is not chaos for its own sake, but tension: playing close enough to the edge that every choice matters.",
+      "New York enters their music without being named. It lives in the urgency, in layers fighting for space and in the feeling that something different could happen after any corner.",
+      "Before we leave, they play the same fragment once more. It lasts less than a minute and sounds completely different. Perhaps that is the point: for Geese, a song is not a fixed destination but a question that changes each time somebody tries to answer it."
     ],
-    "note": "Este reportaje es una pieza editorial ficticia creada para ARE WE THERE YET?"
+    "note": "This is a fictional editorial piece created for ARE WE THERE YET?"
   },
   {
     "id": "07",
     "template": "photoFeature",
     "image": "./assets/images/e88c8208292e743ed54abef80ce8eac1.jpg",
-    "imageAlt": "Intérprete de pie detrás de una lámpara encendida",
-    "kicker": "Escena / 07",
-    "title": "LA LUZ<br>ES OTRO<br>INSTRUMENTO",
-    "body": "Un escenario vacío nunca está vacío. Hay una lámpara, un cuerpo, la expectativa de que algo empiece."
+    "imageAlt": "A performer standing behind a lit floor lamp",
+    "kicker": "Stage / 07",
+    "title": "LIGHT<br>IS ANOTHER<br>INSTRUMENT",
+    "body": "An empty stage is never really empty. There is a lamp, a body and the expectation that something is about to begin."
   },
   {
     "id": "08",
     "template": "listFeature",
-    "kicker": "Manual de escucha / 08",
-    "title": "SUBÍ<br>EL<br>VOLUMEN",
+    "kicker": "Listening manual / 08",
+    "title": "TURN<br>IT<br>UP",
     "image": "./assets/images/0ce7b46d43fa153ce62815a46278fe35.jpg",
-    "imageAlt": "Persona con auriculares oscuros escuchando música",
+    "imageAlt": "A person wearing dark headphones and listening to music",
     "steps": [
-      "Elegí un disco que nunca terminaste.",
-      "Apagá las notificaciones.",
-      "Escuchá también el espacio entre canciones.",
-      "Cuando termine, no pongas nada durante un minuto."
+      "Choose a record you never finished.",
+      "Turn off every notification.",
+      "Listen to the space between songs too.",
+      "When it ends, play nothing for one minute."
     ]
   },
   {
     "id": "09",
     "template": "photoFeature",
     "image": "./assets/images/e9c12475e10e368cbd080475eed7a7cf.jpg",
-    "imageAlt": "Casa rural y caballos bajo un cielo azul nocturno",
-    "kicker": "Crónica / 09 — Por Inés Valdivia",
-    "title": "SALIR<br>DE NOCHE",
-    "body": "A las tres de la mañana el camino pierde sus nombres. Queda una ventana encendida y una radio que llega desde algún cuarto."
+    "imageAlt": "A rural house and horses beneath a blue night sky",
+    "kicker": "Chronicle / 09 — By Inés Valdivia",
+    "title": "GOING<br>OUT AT<br>NIGHT",
+    "body": "At three in the morning, the road loses its names. A window remains lit and a radio drifts in from some distant room."
   },
   {
     "template": "article",
@@ -144,8 +144,8 @@
     "kicker": "AWTY? — Issue 01",
     "title": "THIS IS<br>NOT THE<br>END.",
     "credits": [
-      "Dirección editorial: Alma Rivas",
-      "Diseño y código: Studio AWTY?",
+      "Editorial direction: Alma Rivas",
+      "Design and code: Studio AWTY?",
       "Buenos Aires / 2026"
     ]
   },
@@ -157,7 +157,7 @@
     "subtitle": "Everybody loves you until you become somebody else.",
     "articleKicker": "",
     "articleTitle": "",
-    "author": "By Sandy Harwol",
+    "author": "By Bruno Valdés",
     "paragraphs": [
       "Bob Dylan walks onstage in Manchester in 1966 wearing a dark suit that makes him look less like a folk singer and more like somebody who has arrived to collect a debt. His hair is enormous. He is twenty-four years old. This is important because twenty-four is very young to already have people complaining that you have betrayed everything you once represented.",
       "The first half of the concert is easy enough. Dylan alone, acoustic guitar, harmonica, the version of him everybody had paid to see. It must have been comforting. There he was. Their Dylan. The protest singer. The mysterious skinny boy from Minnesota who somehow sounded as if he had been born seventy years old and on the side of a railway track.",
@@ -244,6 +244,204 @@
     "buttonLabel": "",
     "buttonUrl": "",
     "buttonNewTab": ""
+  },
+  {
+    "template": "article",
+    "backgroundImage": "https://www.nme.com/wp-content/uploads/2020/05/Iggy-and-Bowie-1392x884.jpg",
+    "topLabel": "BERLIN / DOMESTIC MYTHOLOGY",
+    "title": "TWO<br>IDIOTS",
+    "subtitle": "What did Bowie and Iggy do on a Tuesday morning?",
+    "articleKicker": "Cultural story / Apartment 155",
+    "articleTitle": "TWO IDIOTS IN BERLIN",
+    "author": "By Tomás Arce",
+    "paragraphs": [
+      "The famous version begins at night: Bowie, Iggy Pop, West Berlin, danger, reinvention. The useful version begins in the morning. Two men wake up in an ordinary Schöneberg apartment and have to decide who is buying groceries.",
+      "They had arrived carrying reputations too large to live inside. Los Angeles had turned Bowie's success into a chemical emergency. Iggy had survived the Stooges, institutions and himself. Berlin offered neither innocence nor cure, only the rare luxury of being less visible.",
+      "They rode bicycles. They went to cafés. They shared rooms, habits and the unglamorous negotiations of domestic life. The key to the apartment now sits in an archive because history eventually puts even rent and door locks behind glass.",
+      "The records matter: Low, Heroes, The Idiot, Lust for Life. But masterpieces are assembled from hours that do not look like masterpieces. Somebody washes a cup. Somebody misses a train. Somebody hears a rhythm through the wall and remembers it later in the studio.",
+      "Disappearing was not an escape from work. It was the condition that made different work possible. Anonymity gave them enough empty space to stop performing David Bowie and Iggy Pop all day long.",
+      "Perhaps reinvention is less theatrical than we imagine. Sometimes it is two exhausted friends in a supermarket, choosing what to eat, practicing how to become ordinary enough to become strange again."
+    ],
+    "note": "A domestic portrait, not a complete biography.",
+    "articleLayout": "left",
+    "articlePanelBackground": "",
+    "articlePanelColor": "#f1efea",
+    "articleBodyColor": "#111111",
+    "accentColor": "#ff3b1f",
+    "imagePosition": "left",
+    "buttonLabel": "Bowie in Berlin archive",
+    "buttonUrl": "https://davidbowie-berlin.de/en/",
+    "buttonNewTab": "1"
+  },
+  {
+    "template": "article",
+    "backgroundImage": "https://images.prismic.io/awware/557c6de4-6dc0-4d2b-b990-95d1aa937299_starbucks-logo-history.jpeg?auto=compress%2Cformat",
+    "topLabel": "DESIGN ARCHAEOLOGY",
+    "title": "THE<br>SIREN",
+    "subtitle": "A monster learns how to fit on a cup.",
+    "articleKicker": "Brand systems / Controlled transformation",
+    "articleTitle": "THE WOMAN INSIDE YOUR COFFEE CUP",
+    "author": "By Elías Grau",
+    "paragraphs": [
+      "Before she became green, symmetrical and globally reproducible, the Starbucks siren was brown, explicit and difficult. She had two tails, a visible body and the density of an old maritime illustration. She looked less like a logo than evidence recovered from a shipwreck.",
+      "The company began in Seattle in 1971, and the nautical creature connected coffee to ports, trade routes and the long voyage of beans. But the image carried too much information for the system it would eventually need to serve.",
+      "Each redesign performs a small act of domestication. The body retreats. The hair becomes cover. The drawing grows cleaner. Green replaces brown. The surrounding words disappear once the face becomes recognizable enough to work without language.",
+      "This is usually described as simplification, but simplification sounds neutral. What happened was stranger: a dangerous mythological figure was trained to survive airports, phone screens, paper sleeves and signs seen from moving cars.",
+      "The 2011 mark removed the Starbucks name entirely. The siren no longer had to tell you who she was. Recognition had become automatic, and the creature was finally free from the circle only because the corporation around her had become invisible.",
+      "Good global symbols do not merely become simpler. They teach us to remember what they removed. Two fragments of a tail remain at the edges. The monster is still there, cropped to fit your hand."
+    ],
+    "note": "The logo is a history of everything a brand learns it can omit.",
+    "articleLayout": "overlay-left",
+    "articlePanelBackground": "glass",
+    "articlePanelColor": "#003b2d",
+    "articleBodyColor": "#ffffff",
+    "accentColor": "#ffffff",
+    "buttonLabel": "Logo system",
+    "buttonUrl": "https://creative.starbucks.com/logos/",
+    "buttonNewTab": "1"
+  },
+  {
+    "template": "article",
+    "backgroundImage": "https://www.filmofilia.com/wp-content/uploads/2026/01/travis-scott-odyssey-nolan.jpg",
+    "topLabel": "CURRENT CULTURE / ORAL TRANSMISSION",
+    "title": "THE<br>BARD",
+    "subtitle": "Before stories were books, somebody had to perform them.",
+    "articleKicker": "Cinema / The Odyssey / 2026",
+    "articleTitle": "THE RAPPER WAS ALWAYS A BARD",
+    "author": "By Bruno Valdés",
+    "paragraphs": [
+      "Travis Scott appearing as a bard in Christopher Nolan's The Odyssey first sounded like stunt casting: a contemporary celebrity dropped into an ancient story to create one loud headline.",
+      "Then Nolan explained the logic. The poem reached us through oral transmission, passed between performers before it became an object assigned in classrooms. Casting a rapper was a nod to that lineage: story carried by rhythm, memory, breath and a body in front of an audience.",
+      "The comparison is not that rap and Homer are identical. It is that literature was once an event. A story did not wait silently inside a book. Somebody had to hold a room, control time, repeat what mattered and alter emphasis without losing the path home.",
+      "Scott's presence collapses the comfortable distance between epic and popular culture. The bard stops being a decorative man with a lyre and becomes recognizable as a working performer whose voice organizes a crowd.",
+      "Every generation acts surprised when an old form returns wearing current clothes. We call it an anachronism because we have mistaken the costume for the function.",
+      "The rapper was not invited into the epic. The epic had been waiting inside the rapper: a portable archive, delivered out loud, built to survive the night."
+    ],
+    "note": "Published after the film's 2026 release.",
+    "articleLayout": "overlay-right",
+    "articlePanelBackground": "transparent",
+    "articleBodyColor": "#ffffff",
+    "accentColor": "#ff4c24",
+    "buttonLabel": "Read the interview",
+    "buttonUrl": "https://au.variety.com/2026/more/features/travis-scott-interview-the-odyssey-paramount-deal-38794/",
+    "buttonNewTab": "1"
+  },
+  {
+    "template": "article",
+    "backgroundImage": "https://memorabilia.one-eye-witness.com/wp-content/themes/twentytwentyfive/landing/memorabilia-book-spread-showing-vintage-rave-flyers-1.jpeg",
+    "topLabel": "BERLIN / AMSTERDAM / 1989—1999",
+    "title": "PRINT<br>AND RUN",
+    "subtitle": "Design made quickly enough to disappear.",
+    "articleKicker": "Visual archive / Night information",
+    "articleTitle": "PRINT IT BEFORE THE POLICE ARRIVE",
+    "author": "By Elías Grau",
+    "paragraphs": [
+      "A rave flyer had to answer practical questions while pretending not to know too much. When? Somewhere after midnight. Where? Call this number. Who? A list of names stretched, compressed or disguised until information became texture.",
+      "The visual language of European rave culture was not born from a style guide. It came from photocopiers, borrowed type, cheap paper, incomplete maps and the need to move information before authorities could move faster.",
+      "Distortion was useful. So was ambiguity. A flyer had to attract the right reader without becoming too legible to the wrong one. Design operated as invitation, filter and low-resolution encryption.",
+      "Nothing needed to survive. Ink rubbed off in a pocket. Telephone numbers stopped working. Warehouses returned to being warehouses. The object completed its task when the crowd arrived, which makes its survival in an archive feel almost accidental.",
+      "Today's event image is corrected, resized and distributed across identical templates. The old flyers resist that cleanliness. Their mistakes document speed: crooked crops, exhausted toner, type colliding with type because empty space looked like wasted money.",
+      "This is what design looks like when its first responsibility is not to endure. It points toward a temporary door, waits for the bass to begin, and becomes obsolete before sunrise."
+    ],
+    "note": "Inspired by Dutch and European rave ephemera archives.",
+    "articleLayout": "full",
+    "articlePanelBackground": "glass",
+    "articlePanelColor": "#1200ff",
+    "articleBodyColor": "#ffffff",
+    "accentColor": "#dfff00",
+    "buttonLabel": "Open the archive",
+    "buttonUrl": "https://memorabilia.one-eye-witness.com/",
+    "buttonNewTab": "1"
+  },
+  {
+    "template": "article",
+    "backgroundImage": "https://www.rtachicago.org/uploads/images/general/_copyWithImage/22-RTA-1223.jpeg",
+    "topLabel": "06:58—07:58 / PRIVATE TRANSIT",
+    "title": "ONE<br>HOUR",
+    "subtitle": "The commute as a room you carry with you.",
+    "articleKicker": "Creative ritual / Field hypothesis",
+    "articleTitle": "ONE HOUR TO BECOME SOMEONE ELSE",
+    "author": "By Tomás Arce",
+    "paragraphs": [
+      "There is a story about a creative director who builds a new one-hour playlist for the trip from home to work every day. We could not verify the name, so we removed it. The ritual is more interesting without a hero anyway.",
+      "The playlist is not background music. It is transitional architecture. Track by track, a private person is dismantled and a professional version is assembled before the office doors open.",
+      "Commuting is usually described as dead time, but dead time is available material. A repeated route creates a stable container: the same platform, the same turns, a duration long enough to change temperature.",
+      "A different sequence each morning prevents the ritual from becoming wallpaper. Selection requires a forecast. What speed will the day demand? What confidence has to be manufactured? Which song belongs exactly three stops before arrival?",
+      "The story remains deliberately unattributed because the internet is full of elegant anecdotes searching for famous owners. Better to preserve the useful part and mark the uncertainty than to convert a lead into a lie.",
+      "Try it tomorrow. Build one hour for the person who leaves home, and another for the person expected to arrive. Listen for the point at which they exchange places."
+    ],
+    "note": "The original attribution remains unverified; the ritual is presented as an open experiment.",
+    "articleLayout": "",
+    "articlePanelBackground": "",
+    "articlePanelColor": "#ff5b36",
+    "articleBodyColor": "#111111",
+    "accentColor": "#ffffff",
+    "imagePosition": "center"
+  },
+  {
+    "template": "article",
+    "backgroundImage": "https://cdn8.openculture.com/2018/12/02202102/Oblique-Strategies-3.jpg",
+    "topLabel": "ONE CARD / ONE INTERRUPTION",
+    "title": "OBLIQUE",
+    "subtitle": "Honour thy error as a hidden intention.",
+    "articleKicker": "Object / Method / 1975",
+    "articleTitle": "OBLIQUE",
+    "author": "By Elías Grau",
+    "paragraphs": [
+      "Brian Eno and Peter Schmidt made a deck of cards for the moment when a creative process begins repeating itself. Each card offers an instruction: remove specifics, emphasize differences, use an old idea, work at a different speed.",
+      "The advice is deliberately incomplete. It does not solve the problem; it damages the habits that produced the problem. Drawing at random lets an outside voice interrupt the small dictatorship of taste.",
+      "This is the uncomfortable proposition behind Oblique Strategies: creativity may depend less on inspiration than on constructing intelligent ways to sabotage yourself.",
+      "A card can be obeyed, rejected or misunderstood. All three responses are useful because the point is movement. Even irritation reveals the rule you were following without noticing.",
+      "The deck turns indecision into an object. Instead of staring inward and waiting to feel certain, the artist performs a simple physical act, accepts a constraint and continues.",
+      "If you need randomness to make a decision, perhaps the decision was never the valuable part. Perhaps the valuable part was escaping the person who kept making it the same way."
+    ],
+    "note": "Oblique Strategies was first published by Eno and Schmidt in 1975.",
+    "articleLayout": "center",
+    "articlePanelBackground": "transparent",
+    "articleBodyColor": "#ffffff",
+    "accentColor": "#ffffff",
+    "buttonLabel": "See the original cards",
+    "buttonUrl": "https://www.openculture.com/2018/12/behold-original-deck-oblique-strategies-cards-handwritten-by-brian-eno.html",
+    "buttonNewTab": "1"
+  },
+  {
+    "template": "article",
+    "backgroundImage": "https://www.moma.org/media/W1siZiIsIjE3MjI0OSJdLFsicCIsImNvbnZlcnQiLCItcXVhbGl0eSA5MCAtcmVzaXplIDIwMDB4MjAwMFx1MDAzZSJdXQ.jpg?sha=c909ddb60123c4b6",
+    "topLabel": "NEW YORK / BACK SEAT / 1976",
+    "title": "I ♥ NY",
+    "subtitle": "A tiny sketch becomes public language.",
+    "articleKicker": "Design anecdote / Four characters",
+    "articleTitle": "I ♥ NY WAS DRAWN IN A TAXI",
+    "author": "By Tomás Arce",
+    "paragraphs": [
+      "Milton Glaser drew the first arrangement in the back of a taxi: an I, a heart and NY stacked on a scrap of paper. The sketch was small enough to lose before reaching the destination.",
+      "New York in the mid-seventies was facing bankruptcy, layoffs, crime and a garbage strike. The tourism campaign did not need a description of the city. It needed a declaration that could survive contradiction.",
+      "The heart did something language could not. It made affection graphic, immediate and available for copying. The mark did not say New York was easy, clean or safe. It said love could exist without evidence.",
+      "Glaser understood the image as something like initials carved into a tree. That explains its durability better than branding theory: it looked less like an institution speaking and more like somebody leaving a personal trace.",
+      "Then the public took it. Cities, bands, shops and tourists replaced NY with everything imaginable. Copying did not weaken the original; it proved the grammar worked.",
+      "A logo belongs to its designer while it is being adjusted. Language begins when strangers can use it without permission. Somewhere between the taxi and the first counterfeit shirt, the mark crossed that line."
+    ],
+    "note": "The original concept sketch is held by MoMA.",
+    "articleLayout": "overlay-left",
+    "articlePanelBackground": "glass",
+    "articlePanelColor": "#ffffff",
+    "articleBodyColor": "#111111",
+    "accentColor": "#ff2b2b",
+    "buttonLabel": "View the sketch",
+    "buttonUrl": "https://www.moma.org/collection/works/128649",
+    "buttonNewTab": "1"
+  },
+  {
+    "template": "photoFeature",
+    "image": "https://www.nitas-tessile.com/wp-content/uploads/2023/03/shutterstock_2123712146-scaled.jpg",
+    "imageAlt": "Close view of deep red velvet folds",
+    "kicker": "AWTY? / Interlude",
+    "title": "THE RED<br>CURTAIN",
+    "body": "A curtain does not hide an answer. It creates the possibility that an answer exists behind it.",
+    "textColor": "#ffffff",
+    "accentColor": "#ff0000",
+    "imageFit": "cover",
+    "imagePosition": "center"
   },
   {
     "template": "videoFeature",
