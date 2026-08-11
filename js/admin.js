@@ -8,6 +8,9 @@
   const editorEmpty = document.getElementById('editorEmpty');
   const editorForm = document.getElementById('editorForm');
   const previewFrame = document.getElementById('previewFrame');
+  const previewFrameWrap = document.getElementById('previewFrameWrap');
+  const previewDimensions = document.getElementById('previewDimensions');
+  const previewSizeButtons = [...document.querySelectorAll('[data-preview-size]')];
 
   const schema = window.AWTY_SCHEMA;
   const templates = window.AWTY_TEMPLATES;
@@ -15,6 +18,39 @@
   let sections = [];
   let activeIndex = -1;
   let dirty = false;
+  let previewSize = 'desktop';
+
+  const previewViewports = {
+    desktop: { width: 1440, height: 900 },
+    tablet: { width: 768, height: 1024 },
+    mobile: { width: 390, height: 844 }
+  };
+
+  function updatePreviewViewport() {
+    const viewport = previewViewports[previewSize];
+    const availableWidth = previewFrameWrap.clientWidth;
+    const scale = availableWidth / viewport.width;
+
+    previewFrameWrap.style.height = `${viewport.height * scale}px`;
+    previewFrameWrap.dataset.previewSize = previewSize;
+    previewFrame.style.width = `${viewport.width}px`;
+    previewFrame.style.height = `${viewport.height}px`;
+    previewFrame.style.transform = `scale(${scale})`;
+    previewDimensions.textContent = `${viewport.width} × ${viewport.height} — escalado al panel`;
+
+    previewSizeButtons.forEach(button => {
+      button.classList.toggle('is-active', button.dataset.previewSize === previewSize);
+    });
+  }
+
+  previewSizeButtons.forEach(button => {
+    button.addEventListener('click', () => {
+      previewSize = button.dataset.previewSize;
+      updatePreviewViewport();
+    });
+  });
+
+  new ResizeObserver(updatePreviewViewport).observe(previewFrameWrap);
 
   function setStatus(text) {
     statusEl.textContent = text;
@@ -410,4 +446,5 @@
   });
 
   load();
+  updatePreviewViewport();
 })();

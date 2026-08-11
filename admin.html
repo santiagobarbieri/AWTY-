@@ -46,9 +46,14 @@
       <section class="admin__preview-pane">
         <div class="admin__preview-header">
           <h2>Vista previa</h2>
-          <span class="admin__preview-hint">Igual al render real del sitio</span>
+          <div class="admin__preview-devices" role="group" aria-label="Tamaño de la vista previa">
+            <button class="admin__device-btn is-active" type="button" data-preview-size="desktop">Desktop</button>
+            <button class="admin__device-btn" type="button" data-preview-size="tablet">Tablet</button>
+            <button class="admin__device-btn" type="button" data-preview-size="mobile">Mobile</button>
+          </div>
         </div>
-        <div class="admin__preview-frame-wrap">
+        <p id="previewDimensions" class="admin__preview-hint">1440 × 900 — escalado al panel</p>
+        <div id="previewFrameWrap" class="admin__preview-frame-wrap" data-preview-size="desktop">
           <iframe id="previewFrame" class="admin__preview-frame" title="Vista previa de la sección"></iframe>
         </div>
       </section>
