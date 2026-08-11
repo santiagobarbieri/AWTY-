@@ -82,8 +82,10 @@
     }
     const attributes = window.AWTY_SECTION_ATTRIBUTES(entry);
     const extras = window.AWTY_SECTION_EXTRAS(entry);
-    return `<section class="section tpl-${entry.template}" data-section="${position}" data-template="${entry.template}"${attributes}>${render(entry)}${extras}${transitionMarkup(idx)}</section>`;
+    return `<section class="section tpl-${entry.template}" id="section-${position}" data-section="${position}" data-template="${entry.template}"${attributes}>${render(entry)}${extras}${transitionMarkup(idx)}</section>`;
   }).join('');
+
+  window.AWTY_RENDERED_SECTIONS = sections;
 
   if (window.AWTYLoop && typeof window.AWTYLoop.init === 'function') {
     window.AWTYLoop.init();

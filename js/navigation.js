@@ -68,6 +68,7 @@
     if (event.key === 'Escape' && navigator.classList.contains('is-open')) closeNavigator();
   });
   document.addEventListener('awty:rendered', event => buildIndex(event.detail.sections));
+  if (Array.isArray(window.AWTY_RENDERED_SECTIONS)) buildIndex(window.AWTY_RENDERED_SECTIONS);
 
   logoLink?.addEventListener('click', event => { event.preventDefault(); goToSection('01'); });
   logo?.addEventListener('error', () => logoLink.classList.add('is-missing'));
@@ -79,6 +80,9 @@
   }
   updateClock();
   window.setInterval(updateClock, 1000);
+
+  const initialView = window.location.hash.slice(1).toLowerCase();
+  if (['index', 'about', 'contact'].includes(initialView)) openNavigator(initialView);
 
   form?.addEventListener('submit', event => {
     event.preventDefault();
