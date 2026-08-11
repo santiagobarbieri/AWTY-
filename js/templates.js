@@ -99,13 +99,17 @@ window.AWTY_TEMPLATES = {
 
   article(d) {
     const paragraphs = (d.paragraphs || []).map(p => `<p>${p}</p>`).join('');
+    const panelStyles = [];
+    if (d.articlePanelColor) panelStyles.push(`background-color:${d.articlePanelColor}`);
+    if (d.articleBodyColor) panelStyles.push(`color:${d.articleBodyColor}`);
+    const panelStyle = panelStyles.length ? ` style="${panelStyles.join(';')}"` : '';
     return `
       <div class="article__intro" style="background-image:url('${d.backgroundImage || ''}')">
         <p class="article__top-label">${d.topLabel || ''}</p>
         <h2 class="article__title">${d.title || ''}</h2>
         <p class="article__subtitle">${d.subtitle || ''}</p>
       </div>
-      <article class="article__panel" aria-label="${d.articleTitle || ''}">
+      <article class="article__panel" aria-label="${d.articleTitle || ''}"${panelStyle}>
         <p class="article__kicker">${d.articleKicker || ''}</p>
         <h3 class="article__headline">${d.articleTitle || ''}</h3>
         <p class="article__author">${d.author || ''}</p>

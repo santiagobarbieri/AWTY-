@@ -83,7 +83,9 @@ window.AWTY_SCHEMA = {
       { key: "articleTitle", label: "Título del artículo", type: "text" },
       { key: "author", label: "Autor/a", type: "text" },
       { key: "paragraphs", label: "Párrafos (uno por línea)", type: "list-text" },
-      { key: "note", label: "Nota al pie", type: "text" }
+      { key: "note", label: "Nota al pie", type: "text" },
+      { key: "articlePanelColor", label: "Fondo del bloque de lectura", type: "color", group: "Colores del artículo" },
+      { key: "articleBodyColor", label: "Texto del bloque de lectura", type: "color", group: "Colores del artículo" }
     ]
   },
   listFeature: {
