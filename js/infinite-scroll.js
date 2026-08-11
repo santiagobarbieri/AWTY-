@@ -124,6 +124,17 @@
   function initialize() {
     updateSectionHeight();
 
+    const availableSections = getSections();
+    if (!availableSections.length) return;
+
+    if (magazine.dataset.loopReady === 'true') {
+      const currentSections = getSections();
+      updateParallax(currentSections);
+      updateIndicator(currentSections);
+      return;
+    }
+    magazine.dataset.loopReady = 'true';
+
     // Coloca la última sección arriba de la primera para permitir
     // scroll hacia arriba desde el primer instante.
     const last = magazine.lastElementChild;
@@ -138,6 +149,8 @@
   }
 
   magazine.addEventListener('scroll', onScroll, { passive: true });
+
+  window.AWTYLoop = { init: initialize };
 
   window.addEventListener('resize', () => {
     clearTimeout(resizeTimer);

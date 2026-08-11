@@ -6,7 +6,6 @@
 (async () => {
   const magazine = document.querySelector('#magazine');
   const indicator = document.querySelector('#sectionIndicator');
-  const indicatorTotal = document.querySelector('#sectionIndicatorTotal');
   if (!magazine) return;
 
   let sections;
@@ -60,6 +59,20 @@
   // El número que se ve en el indicador es la posición real en el
   // array (no un "id" a mano) — así nunca se desincroniza al
   // reordenar o agregar secciones desde el panel.
+  const transitionAssets = [
+    { at: 2, file: 'chrome-asterisk.png', style: 'chrome', position: 'right' },
+    { at: 6, file: 'blue-knot.png', style: 'knot', position: 'left' },
+    { at: 9, file: 'yellow-arrow.png', style: 'arrow', position: 'right' },
+    { at: 13, file: 'chrome-asterisk.png', style: 'chrome', position: 'center' },
+    { at: 17, file: 'blue-knot.png', style: 'knot', position: 'right' },
+    { at: 20, file: 'yellow-arrow.png', style: 'arrow', position: 'left' }
+  ];
+  const transitionMarkup = index => {
+    const asset = transitionAssets.find(item => item.at === index);
+    if (!asset) return '';
+    return `<div class="transition-object transition-object--${asset.style} transition-object--${asset.position}" aria-hidden="true"><img src="./assets/transition/${asset.file}" alt=""></div>`;
+  };
+
   magazine.innerHTML = sections.map((entry, idx) => {
     const render = window.AWTY_TEMPLATES[entry.template];
     const position = String(idx + 1).padStart(2, '0');
@@ -69,14 +82,12 @@
     }
     const attributes = window.AWTY_SECTION_ATTRIBUTES(entry);
     const extras = window.AWTY_SECTION_EXTRAS(entry);
-    return `<section class="section tpl-${entry.template}" data-section="${position}"${attributes}>${render(entry)}${extras}</section>`;
+    return `<section class="section tpl-${entry.template}" data-section="${position}" data-template="${entry.template}"${attributes}>${render(entry)}${extras}${transitionMarkup(idx)}</section>`;
   }).join('');
-
-  if (indicatorTotal) {
-    indicatorTotal.textContent = `/${String(sections.length).padStart(2, '0')}`;
-  }
 
   if (window.AWTYLoop && typeof window.AWTYLoop.init === 'function') {
     window.AWTYLoop.init();
   }
+
+  document.dispatchEvent(new CustomEvent('awty:rendered', { detail: { sections } }));
 })();

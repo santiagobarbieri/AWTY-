@@ -30,13 +30,59 @@
   -->
   <main class="magazine" id="magazine" aria-label="Revista ARE WE THERE YET?"></main>
 
-  <div class="section-indicator" aria-hidden="true">
-    <span class="section-indicator__dot"></span>
-    <span id="sectionIndicator">01</span><span id="sectionIndicatorTotal" class="section-indicator__total">/10</span>
-  </div>
+  <header class="site-tools" aria-label="Magazine controls">
+    <button class="index-trigger" id="indexTrigger" type="button" aria-expanded="false" aria-controls="siteNavigator">INDEX</button>
+    <a class="site-mark" href="#" id="siteMark" aria-label="ARE WE THERE YET? — first section">
+      <img src="./assets/logo.svg" alt="ARE WE THERE YET?" id="siteLogo">
+      <span class="site-mark__fallback">AWTY?</span>
+    </a>
+    <time class="site-clock" id="siteClock" aria-label="Local time">00:00:00</time>
+    <span class="section-indicator" id="sectionIndicator" aria-label="Current section">01</span>
+  </header>
+
+  <aside class="site-navigator" id="siteNavigator" aria-hidden="true">
+    <button class="site-navigator__backdrop" type="button" data-nav-close tabindex="-1" aria-label="Close navigation"></button>
+    <div class="site-navigator__panel" role="dialog" aria-modal="true" aria-labelledby="navigatorTitle">
+      <div class="site-navigator__topline">
+        <p id="navigatorTitle">ARE WE THERE YET?</p>
+        <button class="site-navigator__close" type="button" data-nav-close aria-label="Close navigation">CLOSE</button>
+      </div>
+
+      <nav class="site-navigator__tabs" aria-label="Navigation views">
+        <button type="button" class="is-active" data-nav-tab="index">INDEX</button>
+        <button type="button" data-nav-tab="about">ABOUT</button>
+        <button type="button" data-nav-tab="contact">CONTACT</button>
+      </nav>
+
+      <div class="site-navigator__view is-active" data-nav-view="index">
+        <ol class="site-index" id="siteIndex"></ol>
+      </div>
+
+      <div class="site-navigator__view" data-nav-view="about">
+        <div class="about-copy">
+          <p class="about-copy__eyebrow">A MAGAZINE WITHOUT A LAST PAGE</p>
+          <h2>Scroll. Drift. Enter anywhere.</h2>
+          <p>ARE WE THERE YET? is an infinite digital magazine about music, images, design and the strange spaces between them. The publication quietly rearranges its edges as you move, so there is no hard beginning or end.</p>
+          <p>Use the index to jump directly to a story. Long reads keep their own scroll; visual essays, listening notes and archive pages ask for a different pace. The loose objects between sections are part of the route: markers, interruptions and small exits from the grid.</p>
+        </div>
+      </div>
+
+      <div class="site-navigator__view" data-nav-view="contact">
+        <form class="contact-form" id="contactForm">
+          <p class="contact-form__intro">Stories, images, corrections or something we should hear.</p>
+          <label>NAME<input name="name" type="text" autocomplete="name" required></label>
+          <label>EMAIL<input name="email" type="email" autocomplete="email" required></label>
+          <label>MESSAGE<textarea name="message" rows="6" required></textarea></label>
+          <button type="submit">WRITE TO US ↗</button>
+          <p class="contact-form__status" id="contactStatus" aria-live="polite"></p>
+        </form>
+      </div>
+    </div>
+  </aside>
 
   <script src="./js/infinite-scroll.js"></script>
   <script src="./js/templates.js"></script>
   <script src="./js/render.js"></script>
+  <script src="./js/navigation.js"></script>
 </body>
 </html>
