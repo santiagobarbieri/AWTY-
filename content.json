@@ -101,7 +101,7 @@
   },
   {
     "template": "article",
-    "backgroundImage": "https://cdn.cosmos.so/46067761-d26e-4e65-aef2-8676d8e342b9?format=webp",
+    "backgroundImage": "",
     "topLabel": "",
     "title": "",
     "subtitle": "",
@@ -151,7 +151,7 @@
   },
   {
     "template": "article",
-    "backgroundImage": "https://64.media.tumblr.com/a3f6c11ec866dcf01f2fedca1d3b4725/tumblr_nmr8cfx9xD1qzy30io1_1280.jpg",
+    "backgroundImage": "",
     "topLabel": "",
     "title": "JUDAS",
     "subtitle": "Everybody loves you until you become somebody else.",
@@ -247,7 +247,7 @@
   },
   {
     "template": "article",
-    "backgroundImage": "https://www.nme.com/wp-content/uploads/2020/05/Iggy-and-Bowie-1392x884.jpg",
+    "backgroundImage": "",
     "topLabel": "BERLIN / DOMESTIC MYTHOLOGY",
     "title": "TWO<br>IDIOTS",
     "subtitle": "What did Bowie and Iggy do on a Tuesday morning?",
@@ -269,13 +269,13 @@
     "articleBodyColor": "#111111",
     "accentColor": "#ff3b1f",
     "imagePosition": "left",
-    "buttonLabel": "Bowie in Berlin archive",
-    "buttonUrl": "https://davidbowie-berlin.de/en/",
-    "buttonNewTab": "1"
+    "buttonLabel": "",
+    "buttonUrl": "",
+    "buttonNewTab": ""
   },
   {
     "template": "article",
-    "backgroundImage": "https://images.prismic.io/awware/557c6de4-6dc0-4d2b-b990-95d1aa937299_starbucks-logo-history.jpeg?auto=compress%2Cformat",
+    "backgroundImage": "",
     "topLabel": "DESIGN ARCHAEOLOGY",
     "title": "THE<br>SIREN",
     "subtitle": "A monster learns how to fit on a cup.",
@@ -296,13 +296,13 @@
     "articlePanelColor": "#003b2d",
     "articleBodyColor": "#ffffff",
     "accentColor": "#ffffff",
-    "buttonLabel": "Logo system",
-    "buttonUrl": "https://creative.starbucks.com/logos/",
-    "buttonNewTab": "1"
+    "buttonLabel": "",
+    "buttonUrl": "",
+    "buttonNewTab": ""
   },
   {
     "template": "article",
-    "backgroundImage": "https://www.filmofilia.com/wp-content/uploads/2026/01/travis-scott-odyssey-nolan.jpg",
+    "backgroundImage": "",
     "topLabel": "CURRENT CULTURE / ORAL TRANSMISSION",
     "title": "THE<br>BARD",
     "subtitle": "Before stories were books, somebody had to perform them.",
@@ -318,17 +318,17 @@
       "The rapper was not invited into the epic. The epic had been waiting inside the rapper: a portable archive, delivered out loud, built to survive the night."
     ],
     "note": "Published after the film's 2026 release.",
-    "articleLayout": "overlay-right",
+    "articleLayout": "bottom",
     "articlePanelBackground": "transparent",
     "articleBodyColor": "#ffffff",
     "accentColor": "#ff4c24",
-    "buttonLabel": "Read the interview",
-    "buttonUrl": "https://au.variety.com/2026/more/features/travis-scott-interview-the-odyssey-paramount-deal-38794/",
-    "buttonNewTab": "1"
+    "buttonLabel": "",
+    "buttonUrl": "",
+    "buttonNewTab": ""
   },
   {
     "template": "article",
-    "backgroundImage": "https://memorabilia.one-eye-witness.com/wp-content/themes/twentytwentyfive/landing/memorabilia-book-spread-showing-vintage-rave-flyers-1.jpeg",
+    "backgroundImage": "",
     "topLabel": "BERLIN / AMSTERDAM / 1989—1999",
     "title": "PRINT<br>AND RUN",
     "subtitle": "Design made quickly enough to disappear.",
@@ -349,13 +349,13 @@
     "articlePanelColor": "#1200ff",
     "articleBodyColor": "#ffffff",
     "accentColor": "#dfff00",
-    "buttonLabel": "Open the archive",
-    "buttonUrl": "https://memorabilia.one-eye-witness.com/",
-    "buttonNewTab": "1"
+    "buttonLabel": "",
+    "buttonUrl": "",
+    "buttonNewTab": ""
   },
   {
     "template": "article",
-    "backgroundImage": "https://www.rtachicago.org/uploads/images/general/_copyWithImage/22-RTA-1223.jpeg",
+    "backgroundImage": "",
     "topLabel": "06:58—07:58 / PRIVATE TRANSIT",
     "title": "ONE<br>HOUR",
     "subtitle": "The commute as a room you carry with you.",
@@ -371,7 +371,7 @@
       "Try it tomorrow. Build one hour for the person who leaves home, and another for the person expected to arrive. Listen for the point at which they exchange places."
     ],
     "note": "The original attribution remains unverified; the ritual is presented as an open experiment.",
-    "articleLayout": "",
+    "articleLayout": "rail",
     "articlePanelBackground": "",
     "articlePanelColor": "#ff5b36",
     "articleBodyColor": "#111111",
@@ -380,7 +380,7 @@
   },
   {
     "template": "article",
-    "backgroundImage": "https://cdn8.openculture.com/2018/12/02202102/Oblique-Strategies-3.jpg",
+    "backgroundImage": "",
     "topLabel": "ONE CARD / ONE INTERRUPTION",
     "title": "OBLIQUE",
     "subtitle": "Honour thy error as a hidden intention.",
@@ -400,13 +400,13 @@
     "articlePanelBackground": "transparent",
     "articleBodyColor": "#ffffff",
     "accentColor": "#ffffff",
-    "buttonLabel": "See the original cards",
-    "buttonUrl": "https://www.openculture.com/2018/12/behold-original-deck-oblique-strategies-cards-handwritten-by-brian-eno.html",
-    "buttonNewTab": "1"
+    "buttonLabel": "",
+    "buttonUrl": "",
+    "buttonNewTab": ""
   },
   {
     "template": "article",
-    "backgroundImage": "https://www.moma.org/media/W1siZiIsIjE3MjI0OSJdLFsicCIsImNvbnZlcnQiLCItcXVhbGl0eSA5MCAtcmVzaXplIDIwMDB4MjAwMFx1MDAzZSJdXQ.jpg?sha=c909ddb60123c4b6",
+    "backgroundImage": "",
     "topLabel": "NEW YORK / BACK SEAT / 1976",
     "title": "I ♥ NY",
     "subtitle": "A tiny sketch becomes public language.",
@@ -422,18 +422,18 @@
       "A logo belongs to its designer while it is being adjusted. Language begins when strangers can use it without permission. Somewhere between the taxi and the first counterfeit shirt, the mark crossed that line."
     ],
     "note": "The original concept sketch is held by MoMA.",
-    "articleLayout": "overlay-left",
+    "articleLayout": "narrow",
     "articlePanelBackground": "glass",
     "articlePanelColor": "#ffffff",
     "articleBodyColor": "#111111",
     "accentColor": "#ff2b2b",
-    "buttonLabel": "View the sketch",
-    "buttonUrl": "https://www.moma.org/collection/works/128649",
-    "buttonNewTab": "1"
+    "buttonLabel": "",
+    "buttonUrl": "",
+    "buttonNewTab": ""
   },
   {
     "template": "photoFeature",
-    "image": "https://www.nitas-tessile.com/wp-content/uploads/2023/03/shutterstock_2123712146-scaled.jpg",
+    "image": "",
     "imageAlt": "Close view of deep red velvet folds",
     "kicker": "AWTY? / Interlude",
     "title": "THE RED<br>CURTAIN",

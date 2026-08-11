@@ -1,0 +1,91 @@
+.tpl-artCarousel {
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  gap: 24px;
+  padding: clamp(28px, 5vw, 72px) 0 clamp(22px, 3vw, 44px);
+  background: #f3f1eb;
+  color: #111;
+}
+
+.art-carousel__header {
+  display: grid;
+  grid-template-columns: 1fr 1.6fr 1fr;
+  gap: 28px;
+  align-items: end;
+  padding: 0 clamp(28px, 5vw, 72px);
+}
+
+.art-carousel__kicker,
+.art-carousel__title,
+.art-carousel__intro,
+.art-carousel__hint {
+  margin: 0;
+}
+
+.art-carousel__kicker,
+.art-carousel__hint {
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: .16em;
+  text-transform: uppercase;
+}
+
+.art-carousel__title {
+  font-size: clamp(48px, 7vw, 110px);
+  font-weight: 900;
+  line-height: .78;
+  letter-spacing: -.08em;
+}
+
+.art-carousel__intro {
+  max-width: 34ch;
+  font-size: 13px;
+  line-height: 1.5;
+}
+
+.art-carousel__track {
+  display: flex;
+  gap: clamp(16px, 2.5vw, 36px);
+  min-height: 0;
+  padding: 0 clamp(28px, 5vw, 72px) 14px;
+  overflow-x: auto;
+  overscroll-behavior-inline: contain;
+  scroll-snap-type: x mandatory;
+  scrollbar-width: thin;
+}
+
+.art-carousel__work {
+  flex: 0 0 clamp(280px, 34vw, 520px);
+  display: grid;
+  grid-template-rows: minmax(0, 1fr) auto;
+  margin: 0;
+  scroll-snap-align: start;
+}
+
+.art-carousel__work img,
+.art-carousel__placeholder {
+  width: 100%;
+  height: 100%;
+  min-height: 34vh;
+  object-fit: contain;
+  background: #dedbd2;
+}
+
+.art-carousel__placeholder {
+  display: grid;
+  place-content: center;
+  gap: 8px;
+  text-align: center;
+}
+
+.art-carousel__placeholder span { font-size: clamp(64px, 9vw, 130px); font-weight: 900; line-height: .8; }
+.art-carousel__placeholder small { font-size: 9px; letter-spacing: .2em; }
+.art-carousel__work figcaption { display: flex; justify-content: space-between; gap: 16px; padding-top: 10px; font-size: 11px; }
+.art-carousel__work figcaption span { text-align: right; opacity: .6; }
+.art-carousel__hint { padding: 0 clamp(28px, 5vw, 72px); text-align: right; }
+
+@media (max-width: 760px) {
+  .art-carousel__header { grid-template-columns: 1fr; gap: 10px; }
+  .art-carousel__intro { display: none; }
+  .art-carousel__work { flex-basis: 78vw; }
+}

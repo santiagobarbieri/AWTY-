@@ -166,5 +166,49 @@ window.AWTY_TEMPLATES = {
         <p class="video-feature__caption">${d.caption || ''}</p>
       </div>
     `;
+  },
+
+  recommendations(d) {
+    const items = (d.items || []).map((item, index) => `
+      <li class="recommendations__item">
+        <span class="recommendations__number">${String(index + 1).padStart(2, '0')}</span>
+        <div>
+          <p class="recommendations__artist">${item.artist || ''}</p>
+          <h3 class="recommendations__release">${item.release || ''}</h3>
+        </div>
+        <p class="recommendations__note">${item.note || ''}</p>
+      </li>
+    `).join('');
+    return `
+      <header class="recommendations__header">
+        <p class="recommendations__kicker">${d.kicker || ''}</p>
+        <h2 class="recommendations__title">${d.title || ''}</h2>
+        <p class="recommendations__intro">${d.intro || ''}</p>
+      </header>
+      <ol class="recommendations__list">${items}</ol>
+    `;
+  },
+
+  artCarousel(d) {
+    const works = (d.works || []).map((work, index) => `
+      <figure class="art-carousel__work">
+        ${work.image
+          ? `<img src="${work.image}" alt="${work.title || 'Artwork'} by ${work.artist || 'unknown artist'}">`
+          : `<div class="art-carousel__placeholder"><span>${String(index + 1).padStart(2, '0')}</span><small>IMAGE SLOT</small></div>`}
+        <figcaption>
+          <strong>${work.artist || ''}</strong>
+          <span>${work.title || ''}${work.year ? `, ${work.year}` : ''}</span>
+        </figcaption>
+      </figure>
+    `).join('');
+    return `
+      <header class="art-carousel__header">
+        <p class="art-carousel__kicker">${d.kicker || ''}</p>
+        <h2 class="art-carousel__title">${d.title || ''}</h2>
+        <p class="art-carousel__intro">${d.intro || ''}</p>
+      </header>
+      <div class="art-carousel__track" aria-label="Artwork carousel">${works}</div>
+      <p class="art-carousel__hint">DRAG / SCROLL HORIZONTALLY →</p>
+    `;
   }
 };

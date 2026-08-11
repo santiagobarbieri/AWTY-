@@ -90,7 +90,10 @@ window.AWTY_SCHEMA = {
         { value: "overlay-right", label: "Flotante sobre foto — derecha" },
         { value: "overlay-left", label: "Flotante sobre foto — izquierda" },
         { value: "center", label: "Flotante central" },
-        { value: "full", label: "Lectura amplia — pantalla completa" }
+        { value: "full", label: "Lectura amplia — pantalla completa" },
+        { value: "bottom", label: "Franja editorial — abajo" },
+        { value: "rail", label: "Columna angosta + lectura" },
+        { value: "narrow", label: "Lectura angosta — mucho aire" }
       ] },
       { key: "articlePanelBackground", label: "Tratamiento del fondo", type: "select", group: "Colores del artículo", options: [
         { value: "", label: "Sólido / diseño original" },
@@ -134,6 +137,35 @@ window.AWTY_SCHEMA = {
       { key: "autoplay", label: "Reproducción", type: "select", options: [
         { value: "0", label: "Manual" },
         { value: "1", label: "Automática, muda y en loop" }
+      ] }
+    ]
+  },
+  recommendations: {
+    label: "Recomendaciones musicales",
+    hint: "Una pausa sin imágenes: discos, canciones o mixes con una nota editorial breve.",
+    fields: [
+      { key: "kicker", label: "Kicker", type: "text" },
+      { key: "title", label: "Título", type: "textarea" },
+      { key: "intro", label: "Introducción", type: "textarea" },
+      { key: "items", label: "Recomendaciones", type: "list-item", itemFields: [
+        { key: "artist", label: "Artista" },
+        { key: "release", label: "Disco / canción / mix" },
+        { key: "note", label: "Por qué escucharlo" }
+      ] }
+    ]
+  },
+  artCarousel: {
+    label: "Carrusel de arte",
+    hint: "Galería horizontal. Dejá la imagen vacía y cargala cuando tengas el archivo o la URL definitiva.",
+    fields: [
+      { key: "kicker", label: "Kicker", type: "text" },
+      { key: "title", label: "Título", type: "textarea" },
+      { key: "intro", label: "Introducción", type: "textarea" },
+      { key: "works", label: "Obras", type: "list-item", itemFields: [
+        { key: "image", label: "Imagen", isImage: true },
+        { key: "artist", label: "Artista" },
+        { key: "title", label: "Obra" },
+        { key: "year", label: "Año" }
       ] }
     ]
   }

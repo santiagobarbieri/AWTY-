@@ -403,7 +403,8 @@
     const templateFileMap = {
       cover: 'cover', index: 'index', photoFeature: 'photo-feature',
       duoImage: 'duo-image', quote: 'quote', article: 'article',
-      listFeature: 'list-feature', outro: 'outro', videoFeature: 'video-feature'
+      listFeature: 'list-feature', outro: 'outro', videoFeature: 'video-feature',
+      recommendations: 'recommendations', artCarousel: 'art-carousel'
     };
     const cssFile = templateFileMap[entry.template] || entry.template;
 

@@ -1,0 +1,81 @@
+.tpl-recommendations {
+  display: grid;
+  grid-template-columns: minmax(280px, .75fr) minmax(0, 1.25fr);
+  gap: clamp(40px, 8vw, 140px);
+  padding: clamp(30px, 6vw, 96px);
+  background: #dfff35;
+  color: #111;
+}
+
+.recommendations__header {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.recommendations__kicker,
+.recommendations__intro,
+.recommendations__artist,
+.recommendations__note {
+  margin: 0;
+}
+
+.recommendations__kicker,
+.recommendations__artist,
+.recommendations__number {
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: .16em;
+  text-transform: uppercase;
+}
+
+.recommendations__title {
+  margin: 0;
+  font-size: clamp(58px, 9vw, 150px);
+  font-weight: 900;
+  line-height: .76;
+  letter-spacing: -.08em;
+}
+
+.recommendations__intro {
+  max-width: 38ch;
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+.recommendations__list {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.recommendations__item {
+  display: grid;
+  grid-template-columns: 42px minmax(180px, .8fr) 1fr;
+  gap: 22px;
+  align-items: start;
+  padding: clamp(14px, 2vh, 24px) 0;
+  border-top: 1px solid currentColor;
+}
+
+.recommendations__release {
+  margin: 5px 0 0;
+  font-size: clamp(20px, 2.5vw, 38px);
+  line-height: .95;
+  letter-spacing: -.05em;
+}
+
+.recommendations__note {
+  font-size: 13px;
+  line-height: 1.45;
+}
+
+@media (max-width: 760px) {
+  .tpl-recommendations { grid-template-columns: 1fr; gap: 24px; }
+  .recommendations__header { gap: 18px; }
+  .recommendations__item { grid-template-columns: 28px 1fr; }
+  .recommendations__note { grid-column: 2; }
+}
