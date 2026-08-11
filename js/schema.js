@@ -84,6 +84,14 @@ window.AWTY_SCHEMA = {
       { key: "author", label: "Autor/a", type: "text" },
       { key: "paragraphs", label: "Párrafos (uno por línea)", type: "list-text" },
       { key: "note", label: "Nota al pie", type: "text" },
+      { key: "articleLayout", label: "Posición del bloque de lectura", type: "select", group: "Composición del artículo", options: [
+        { value: "", label: "Derecha — dos columnas" },
+        { value: "left", label: "Izquierda — dos columnas" },
+        { value: "overlay-right", label: "Flotante sobre foto — derecha" },
+        { value: "overlay-left", label: "Flotante sobre foto — izquierda" },
+        { value: "center", label: "Flotante central" },
+        { value: "full", label: "Lectura amplia — pantalla completa" }
+      ] },
       { key: "articlePanelColor", label: "Fondo del bloque de lectura", type: "color", group: "Colores del artículo" },
       { key: "articleBodyColor", label: "Texto del bloque de lectura", type: "color", group: "Colores del artículo" }
     ]
