@@ -47,7 +47,6 @@
     indexList.innerHTML = entries.map((entry, index) => {
       const number = String(index + 1).padStart(2, '0');
       const title = titleFor(entry, `Section ${number}`);
-      const type = cleanText(entry.template).replace(/([A-Z])/g, ' $1');
       return `<li><button type="button" data-jump="${number}"><span class="site-index__number">${number}</span><span class="site-index__title"></span><span class="site-index__type"></span></button></li>`;
     }).join('');
     entries.forEach((entry, index) => {
@@ -67,8 +66,16 @@
   document.addEventListener('keydown', event => {
     if (event.key === 'Escape' && navigator.classList.contains('is-open')) closeNavigator();
   });
-  document.addEventListener('awty:rendered', event => buildIndex(event.detail.sections));
-  if (Array.isArray(window.AWTY_RENDERED_SECTIONS)) buildIndex(window.AWTY_RENDERED_SECTIONS);
+  function onRendered(entries) {
+    buildIndex(entries);
+    const sectionMatch = window.location.hash.match(/^#section-(\d{2})$/);
+    if (sectionMatch) requestAnimationFrame(() => {
+      const target = magazine.querySelector(`[data-section="${sectionMatch[1]}"]`);
+      if (target) magazine.scrollTop = target.offsetTop;
+    });
+  }
+  document.addEventListener('awty:rendered', event => onRendered(event.detail.sections));
+  if (Array.isArray(window.AWTY_RENDERED_SECTIONS)) onRendered(window.AWTY_RENDERED_SECTIONS);
 
   logoLink?.addEventListener('click', event => { event.preventDefault(); goToSection('01'); });
   logo?.addEventListener('error', () => logoLink.classList.add('is-missing'));
