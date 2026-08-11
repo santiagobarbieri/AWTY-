@@ -13,11 +13,11 @@
     "issueLabel": "Issue 01 — August 2026",
     "heading": "CONTENTS",
     "items": [
-      { "number": "10", "title": "The Room Between Rooms", "tag": "Visual essay" },
-      { "number": "12", "title": "Judas.", "tag": "Archival music story" },
-      { "number": "13", "title": "Two Idiots in Berlin", "tag": "Cultural story" },
-      { "number": "16", "title": "Print It Before the Police Arrive", "tag": "Visual archive" },
-      { "number": "19", "title": "I Love NY Was Drawn in a Taxi", "tag": "Design anecdote" }
+      { "number": "04", "title": "The Room Between Rooms", "tag": "Visual essay" },
+      { "number": "09", "title": "Judas.", "tag": "Archival music story" },
+      { "number": "07", "title": "Two Idiots in Berlin", "tag": "Cultural story" },
+      { "number": "14", "title": "Print It Before the Police Arrive", "tag": "Visual archive" },
+      { "number": "21", "title": "I Love NY Was Drawn in a Taxi", "tag": "Design anecdote" }
     ],
     "note": "A magazine about music, images and the things that appear when nobody is looking."
   },
@@ -397,7 +397,8 @@
     ],
     "note": "Oblique Strategies was first published by Eno and Schmidt in 1975.",
     "articleLayout": "center",
-    "articlePanelBackground": "transparent",
+    "articlePanelBackground": "glass",
+    "articlePanelColor": "#111111",
     "articleBodyColor": "#ffffff",
     "accentColor": "#ffffff",
     "buttonLabel": "",
@@ -427,6 +428,44 @@
     "articlePanelColor": "#ffffff",
     "articleBodyColor": "#111111",
     "accentColor": "#ff2b2b",
+    "buttonLabel": "",
+    "buttonUrl": "",
+    "buttonNewTab": ""
+  },
+  {
+    "template": "recommendations",
+    "kicker": "FIVE RECORDS / NO ALGORITHM",
+    "title": "PLAY THESE<br>AFTER<br>MIDNIGHT",
+    "intro": "Not a ranking and not a mood playlist. Five records that change the dimensions of the room when the city gets quiet.",
+    "items": [
+      { "artist": "Alice Coltrane", "release": "Journey in Satchidananda", "note": "Music that seems to begin before the needle touches the record." },
+      { "artist": "Burial", "release": "Untrue", "note": "A city remembered through rain, static and voices that cannot quite return." },
+      { "artist": "Arthur Russell", "release": "World of Echo", "note": "One cello, one voice and an enormous amount of air between them." },
+      { "artist": "Grouper", "release": "Dragging a Dead Deer Up a Hill", "note": "Songs heard through a wall, or perhaps from another year." },
+      { "artist": "Floating Points, Pharoah Sanders & LSO", "release": "Promises", "note": "Nine movements built around the patience to let one phrase keep changing." }
+    ],
+    "backgroundColor": "#dfff35",
+    "textColor": "#111111",
+    "accentColor": "#111111",
+    "buttonLabel": "",
+    "buttonUrl": "",
+    "buttonNewTab": ""
+  },
+  {
+    "template": "artCarousel",
+    "kicker": "MOMA / FIVE ROOMS IN ONE",
+    "title": "ART<br>AFTER DARK",
+    "intro": "A horizontal exhibition about color, repetition and the moment an ordinary room stops behaving normally. Image slots are intentionally empty for the final selections.",
+    "works": [
+      { "image": "", "artist": "Vincent van Gogh", "title": "The Starry Night", "year": "1889" },
+      { "image": "", "artist": "Henri Matisse", "title": "The Red Studio", "year": "1911" },
+      { "image": "", "artist": "Edward Hopper", "title": "New York Movie", "year": "1939" },
+      { "image": "", "artist": "Mark Rothko", "title": "No. 10", "year": "1950" },
+      { "image": "", "artist": "Andy Warhol", "title": "Campbell's Soup Cans", "year": "1962" }
+    ],
+    "backgroundColor": "#f3f1eb",
+    "textColor": "#111111",
+    "accentColor": "#1c18ff",
     "buttonLabel": "",
     "buttonUrl": "",
     "buttonNewTab": ""

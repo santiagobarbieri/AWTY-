@@ -61,7 +61,9 @@ window.AWTY_TEMPLATES = {
 
   photoFeature(d) {
     return `
-      <img class="photo-feature__img" src="${d.image || ''}" alt="${d.imageAlt || ''}">
+      ${d.image
+        ? `<img class="photo-feature__img" src="${d.image}" alt="${d.imageAlt || ''}">`
+        : '<div class="photo-feature__placeholder"><span>IMAGE SLOT</span></div>'}
       <div class="photo-feature__panel">
         <p class="photo-feature__kicker">${d.kicker || ''}</p>
         <h2 class="photo-feature__title">${d.title || ''}</h2>

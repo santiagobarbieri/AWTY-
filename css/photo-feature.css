@@ -11,6 +11,21 @@
   filter: contrast(1.03);
 }
 
+.photo-feature__placeholder {
+  position: absolute;
+  inset: 0;
+  display: grid;
+  place-items: center;
+  background: repeating-linear-gradient(135deg, #8f0017 0 1px, #b40020 1px 80px);
+  color: rgba(255,255,255,.42);
+}
+
+.photo-feature__placeholder span {
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: .2em;
+}
+
 .photo-feature__panel {
   position: absolute;
   left: clamp(20px, 4vw, 56px);
