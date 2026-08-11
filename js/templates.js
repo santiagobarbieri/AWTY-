@@ -101,7 +101,14 @@ window.AWTY_TEMPLATES = {
   article(d) {
     const paragraphs = (d.paragraphs || []).map(p => `<p>${p}</p>`).join('');
     const panelStyles = [];
-    if (d.articlePanelColor) panelStyles.push(`background-color:${d.articlePanelColor}`);
+    if (d.articlePanelBackground === 'transparent') {
+      panelStyles.push('background-color:transparent', 'backdrop-filter:none');
+    } else if (d.articlePanelBackground === 'glass') {
+      const glassColor = d.articlePanelColor || '#111111';
+      panelStyles.push(`background-color:color-mix(in srgb, ${glassColor} 72%, transparent)`, 'backdrop-filter:blur(14px)');
+    } else if (d.articlePanelColor) {
+      panelStyles.push(`background-color:${d.articlePanelColor}`);
+    }
     if (d.articleBodyColor) panelStyles.push(`color:${d.articleBodyColor}`);
     const panelStyle = panelStyles.length ? ` style="${panelStyles.join(';')}"` : '';
     return `

@@ -92,6 +92,11 @@ window.AWTY_SCHEMA = {
         { value: "center", label: "Flotante central" },
         { value: "full", label: "Lectura amplia — pantalla completa" }
       ] },
+      { key: "articlePanelBackground", label: "Tratamiento del fondo", type: "select", group: "Colores del artículo", options: [
+        { value: "", label: "Sólido / diseño original" },
+        { value: "transparent", label: "Transparente" },
+        { value: "glass", label: "Vidrio translúcido" }
+      ] },
       { key: "articlePanelColor", label: "Fondo del bloque de lectura", type: "color", group: "Colores del artículo" },
       { key: "articleBodyColor", label: "Texto del bloque de lectura", type: "color", group: "Colores del artículo" }
     ]
